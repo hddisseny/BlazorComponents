@@ -1,0 +1,67 @@
+/* _content/BootzorComponents/Component1.razor.rz.scp.css */
+.my-component[b-llk2zhxtbf] {
+    border: 2px dashed red;
+    padding: 1em;
+    margin: 1em 0;
+    background-image: url('background.png');
+}
+/* _content/BootzorComponents/Components/Accordion/BZ_Accordion.razor.rz.scp.css */
+.__bz_accordion[b-dvf4947fjl] {
+    border: 1px solid #cacaca;
+}
+
+    .__bz_accordion .__bz_accordion-header[b-dvf4947fjl] {
+        padding: 10px;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .__bz_accordion .__bz_accordion-header[b-dvf4947fjl] {
+        width: 100%;
+        text-decoration: none;
+        color: initial;
+        border: 1px solid #cacaca;
+        cursor: pointer;
+    }
+
+        .__bz_accordion .__bz_accordion-header i.__bz_accordion-header__chevron[b-dvf4947fjl] {
+            font-style: normal;
+            transform: rotateZ(-90deg) scale(1.105);
+            font-weight: bolder;
+            display: inline-block;
+            width: 16px;
+            height: 30px;
+            text-align: center;
+            transition: all .5s ease .05s;
+            transform-origin: center;
+        }
+
+            .__bz_accordion .__bz_accordion-header i.__bz_accordion-header__chevron.collapsed[b-dvf4947fjl] {
+                transform: rotateZ(90deg) scale(1.105);
+            }
+
+        .__bz_accordion .__bz_accordion-header .__bz_accordion-header__title[b-dvf4947fjl] {
+            width: calc(100% - 25px);
+            display: inline-block;
+            position: relative;
+            top: 3px;
+        }
+
+    .__bz_accordion .__bz_accordion-content[b-dvf4947fjl] {
+        transition: max-height .333s ease-in-out;
+        overflow: hidden;
+        max-height: 1000px;
+    }
+
+        .__bz_accordion .__bz_accordion-content .__bz_accordion-content__text[b-dvf4947fjl] {
+            box-sizing: border-box;
+            padding: 1%;
+        }
+
+        .__bz_accordion .__bz_accordion-content.collapsed[b-dvf4947fjl] {
+            max-height: 0;
+            padding: 0;
+        }

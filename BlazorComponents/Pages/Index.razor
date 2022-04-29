@@ -1,0 +1,31 @@
+﻿@using BootzorComponents.Components.Accordion
+@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<div class="app">
+    <div class="app-row">
+        <section>
+            <h2>Accordion</h2>
+            <hr />
+            <p>Component invoke:</p>
+<code>
+    <pre>
+    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
+        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
+        &#60;AccordionContent&#62;
+                &#60;p style="padding: 4% 5% 2% 5%;"&#62;Text example&#60;/p&#62;
+            &#60;/AccordionContent&#62;
+    &#60;/<b>BZ_Accordion</b>&#62;
+    </pre>
+</code>
+            <h3>Example</h3>
+                <BZ_Accordion Collapsed=true>
+                     <AccordionTitle>Press here to show/hide</AccordionTitle>
+                     <AccordionContent>
+                         <p style="padding: 4% 5% 2% 5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
+                     </AccordionContent>
+                </BZ_Accordion>  
+        </section>
+    </div>
+</div>

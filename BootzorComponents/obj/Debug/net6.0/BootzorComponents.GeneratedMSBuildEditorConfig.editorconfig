@@ -1,0 +1,28 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = BootzorComponents
+build_property.RootNamespace = BootzorComponents
+build_property.ProjectDir = C:\develop\csharp\BlazorComponents\BootzorComponents\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\develop\csharp\BlazorComponents\BootzorComponents
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/develop/csharp/BlazorComponents/BootzorComponents/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Component1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-llk2zhxtbf
+
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Accordion/BZ_Accordion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvcmRpb25cQlpfQWNjb3JkaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-dvf4947fjl

@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "XwTvIqdCmmqpqb3JL0NethvzAVnbT4qqiASYaOY6RuY=",
+  "Source": "BootzorComponents",
+  "BasePath": "_content/BootzorComponents",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BootzorComponents\\wwwroot",
+      "Source": "BootzorComponents",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "BasePath": "_content/BootzorComponents",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "BootzorComponents.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "BootzorComponents.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\background.png",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    }
+  ]
+}
