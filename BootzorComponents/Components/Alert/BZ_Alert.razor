@@ -1,4 +1,7 @@
-﻿<div class="__bz_alert @TypeAlert" role="alert">@ChildContent</div>
+﻿<div class="__bz_alert @TypeAlert" role="alert"> 
+    @if(!Icon.Equals(string.Empty)) { <span class="__icon @Icon"></span> }
+    @ChildContent
+</div>
 
 @code {
     /// <summary>
@@ -18,5 +21,12 @@
     /// </summary>
     [Parameter]
     public string? TypeAlert { get; set; }
+    
+    /// <summary>
+    /// Set up if show icon before text
+    /// </summary>
+    [Parameter]
+    public string Icon { get; set; } = string.Empty;
+
 
 }
