@@ -17,3 +17,4 @@ C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\refint\Boo
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorComponents.pdb
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\ref\BootzorComponents.dll
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Accordion\BZ_Accordion.razor.rz.scp.css
+C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Alert\BZ_Alert.razor.rz.scp.css

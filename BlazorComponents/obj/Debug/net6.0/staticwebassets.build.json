@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XPL2uqkcaGr4kz6ZYoCgsQSYHO0+RGns1vFJNDrtHVw=",
+  "Hash": "KReaSSaXQDolAPvAnOi8Q9ojuHRrspOaVDdWWjPA5qc=",
   "Source": "BlazorComponents",
   "BasePath": "_content/BlazorComponents",
   "Mode": "Default",
@@ -308,12 +308,12 @@
       "OriginalItemSpec": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css"
     },
     {
-      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\background.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\css\\Bootzor.css",
       "SourceId": "BootzorComponents",
       "SourceType": "Project",
       "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
-      "RelativePath": "background.png",
+      "RelativePath": "css/Bootzor.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -322,24 +322,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\background.png"
-    },
-    {
-      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\exampleJsInterop.js",
-      "SourceId": "BootzorComponents",
-      "SourceType": "Project",
-      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
-      "BasePath": "_content/BootzorComponents",
-      "RelativePath": "exampleJsInterop.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+      "OriginalItemSpec": "wwwroot\\css\\Bootzor.css"
     }
   ]
 }

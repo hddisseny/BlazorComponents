@@ -26,3 +26,7 @@ build_metadata.AdditionalFiles.CssScope = b-llk2zhxtbf
 [C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Accordion/BZ_Accordion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvcmRpb25cQlpfQWNjb3JkaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-dvf4947fjl
+
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Alert/BZ_Alert.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGVydFxCWl9BbGVydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bhw43rw099

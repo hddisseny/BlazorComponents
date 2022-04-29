@@ -68,4 +68,6 @@ a, .btn-link {
         max-width:768px;
         margin: 15px auto;
     }
-    .app .app-row{}
+    .app .app-row section{
+        margin: 60px 0;
+    }

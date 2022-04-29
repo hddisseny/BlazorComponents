@@ -1,4 +1,5 @@
 ﻿@using BootzorComponents.Components.Accordion
+@using BootzorComponents.Components.Alert
 @page "/"
 
 <PageTitle>Index</PageTitle>
@@ -26,6 +27,33 @@
                          <p style="padding: 4% 5% 2% 5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
                      </AccordionContent>
                 </BZ_Accordion>  
+                <BZ_Accordion Collapsed=true>
+                     <AccordionTitle>Press here to show/hide</AccordionTitle>
+                     <AccordionContent>
+                         <p style="padding: 4% 5% 2% 5%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
+                     </AccordionContent>
+                </BZ_Accordion>  
         </section>
+
+        <section>
+            <h2>Alerts</h2>
+            <hr />
+            <p>Component invoke:</p>
+<code>
+    <pre>
+    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
+        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
+        &#60;AccordionContent&#62;
+                &#60;p style="padding: 4% 5% 2% 5%;"&#62;Text example&#60;/p&#62;
+            &#60;/AccordionContent&#62;
+    &#60;/<b>BZ_Accordion</b>&#62;
+    </pre>
+</code>
+            <h3>Example</h3>
+                <BZ_Alert>Alert TypeAlert : Default</BZ_Alert>
+                <BZ_Alert TypeAlert="primary">Alert TypeAlert : primary</BZ_Alert>
+                <BZ_Alert TypeAlert="success">Alert TypeAlert : success</BZ_Alert>
+        </section>
+
     </div>
 </div>
