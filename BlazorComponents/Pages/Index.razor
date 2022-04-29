@@ -5,6 +5,7 @@
 <PageTitle>Index</PageTitle>
 
 <div class="app">
+    <h1>BlazorComponents - Bootzor</h1>
     <div class="app-row">
         <section>
             <h2>Accordion</h2>
@@ -40,19 +41,22 @@
             <hr />
             <p>Component invoke:</p>
 <code>
-    <pre>
-    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
-        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
-        &#60;AccordionContent&#62;
-                &#60;p style="padding: 4% 5% 2% 5%;"&#62;Text example&#60;/p&#62;
-            &#60;/AccordionContent&#62;
-    &#60;/<b>BZ_Accordion</b>&#62;
+    <pre> 
+    &#60;<b>BZ_Alert</b>&#62;Alert TypeAlert : Default&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="primary"&#62;Alert TypeAlert : primary&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="success"&#62;Alert TypeAlert : success&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="fail"&#62;Alert TypeAlert : fail&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="warning"&#62;Alert TypeAlert : warning&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="info"&#62;Alert TypeAlert : info&#60;/<b>BZ_Alert</b>&#62;
     </pre>
 </code>
             <h3>Example</h3>
                 <BZ_Alert>Alert TypeAlert : Default</BZ_Alert>
                 <BZ_Alert TypeAlert="primary">Alert TypeAlert : primary</BZ_Alert>
                 <BZ_Alert TypeAlert="success">Alert TypeAlert : success</BZ_Alert>
+                <BZ_Alert TypeAlert="fail">Alert TypeAlert : fail</BZ_Alert>
+                <BZ_Alert TypeAlert="warning">Alert TypeAlert : warning</BZ_Alert>
+                <BZ_Alert TypeAlert="info">Alert TypeAlert : info</BZ_Alert>
         </section>
 
     </div>

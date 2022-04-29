@@ -9,7 +9,6 @@ C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorCom
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorComponents.csproj.CoreCompileInputs.cache
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\staticwebassets.build.json
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\staticwebassets.development.json
-C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Component1.razor.rz.scp.css
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\bundle\BootzorComponents.styles.css
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\projectbundle\BootzorComponents.bundle.scp.css
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorComponents.dll

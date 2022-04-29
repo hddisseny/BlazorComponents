@@ -1,10 +1,3 @@
-/* _content/BootzorComponents/Component1.razor.rz.scp.css */
-.my-component[b-llk2zhxtbf] {
-    border: 2px dashed red;
-    padding: 1em;
-    margin: 1em 0;
-    background-image: url('background.png');
-}
 /* _content/BootzorComponents/Components/Accordion/BZ_Accordion.razor.rz.scp.css */
 .__bz_accordion[b-dvf4947fjl] {
     border: 1px solid #cacaca;
@@ -80,17 +73,17 @@
     --bz-color-success-border: #70b194;
     --bz-color-success-text: #41725c;
 
-    --bz-color-fail-bg: #86d292;
-    --bz-color-fail-border: #70b194;
-    --bz-color-fail-text: #41725c;
+    --bz-color-fail-bg: #d07171;
+    --bz-color-fail-border: #bd4a4a;
+    --bz-color-fail-text: #653232;
 
-    --bz-color-warning-bg: #86d292;
-    --bz-color-warning-border: #70b194;
-    --bz-color-warning-text: #41725c;
+    --bz-color-warning-bg: #f5bd6d;
+    --bz-color-warning-border: #ce9e42;
+    --bz-color-warning-text: #8b682c;
 
-    --bz-color-info-bg: #86d292;
-    --bz-color-info-border: #70b194;
-    --bz-color-info-text: #41725c;
+    --bz-color-info-bg: #bffbec;
+    --bz-color-info-border: #4dd6d3;
+    --bz-color-info-text: #4b8d9c;
 }
 
 .alert .primary[b-bhw43rw099] {
