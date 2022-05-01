@@ -9,65 +9,45 @@
         <BCHeader/>
     </header>
     <div class="appContent responsive"> 
-        <BCNSidebar/>
-        <main>
-            <h2>Accordion</h2> 
-            <hr />
-            <section> 
+        <BCNSidebar/> 
+        <BCArticleSection Title="Accordion">
+            <Description>
                 <p>Add accordion content to show and hide content.</p>
-                </section>
-               <section>
-                <h3>Parameters</h3>
-                <hr />
-                <div>
-                    <span class="parameter">Collapsed <small>bool</small></span> 
-                    <br /> 
-                    <span class="parameter-type">true | false</span>
-                    <p>Initial state on load</p>
-                </div>
-                </section>
-               <section>
-                <h3>Use in razor page</h3>
-                 <hr />
-<code>
-    <pre>
-    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
-        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
-        &#60;AccordionContent&#62;
-            &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. 
-                Maecenas scelerisque, urna facilisis fringilla convallis&#60;/p&#62;
-        &#60;/AccordionContent&#62;
-    &#60;/<b>BZ_Accordion</b>&#62;
-
-    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
-        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
-        &#60;AccordionContent&#62;
-            &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. 
-                Maecenas scelerisque, urna facilisis fringilla convallis&#60;/p&#62;
-        &#60;/AccordionContent&#62;
-    &#60;/<b>BZ_Accordion</b>&#62;
-    </pre>
-</code>
-
-                <h3>Result</h3>
-                <hr />
+            </Description>
+            <ComponentParameters>
+                <ParameterSection>
+                    <Name>Collapsed</Name>
+                    <Type>bool</Type>
+                    <TypeDescription>true | false</TypeDescription>
+                    <Description>
+                        <p>Initial state of the accordion when loading the page. 
+                           If it is true it will show the displayed content, 
+                           if it is false the accordion will be shown collapsed.</p>
+                    </Description>
+                </ParameterSection>               
+            </ComponentParameters>
+            <Example>
+                &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
+                    &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
+                    &#60;AccordionContent&#62;
+                        &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. 
+                            Maecenas scelerisque, urna facilisis fringilla convallis&#60;/p&#62;
+                    &#60;/AccordionContent&#62;
+                &#60;/<b>BZ_Accordion</b>&#62;
+            </Example>
+            <Result>
                 <BZ_Accordion Collapsed=true>
                      <AccordionTitle>Press here to show/hide</AccordionTitle>
                      <AccordionContent>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. 
+                            Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis 
+                            fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. 
+                            Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
                      </AccordionContent>
                 </BZ_Accordion>  
-                <BZ_Accordion Collapsed=true>
-                     <AccordionTitle>Press here to show/hide</AccordionTitle>
-                     <AccordionContent>
-                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. Maecenas scelerisque, urna facilisis fringilla convallis, lectus sapien blandit nisi, quis rutrum arcu nisi sed risus. Mauris in suscipit risus, quis gravida odio. Nam eget gravida neque. Nullam sed mollis tellus.</p>
-                     </AccordionContent>
-                </BZ_Accordion>  
-        </section>
-
-        </main>
+            </Result>
+        </BCArticleSection> 
     </div>
 </div>
 

@@ -6,59 +6,31 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    //font-family: 'Special Elite', cursive;
 }
 // App Colors
 $--cl-primary: #7E4984;
 
 // Main headers styles
-h1,h2,h3,h4,h5,h6{
-    font-weight:400;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
 }
 
-// Custom class styles
-.p {
-    // Size
-    &.sz-1 {
-        font-size: 1rem;
+// Main default styles
+.main-article-section {
+    padding-top:50px !important;
+    h2, h3, hr {
+        margin: 0;
+        color: #47304a;
     }
 
-    &.sz-2 {
-        font-size: 1.2rem;
+    hr {
+        margin: 5px 0 10px;
+        border: 1px solid #b067b9;
+        background-color: #b067b9;
     }
 
-    &.sz-3 {
-        font-size: 1.3rem;
-    }
-    // Weight
-    &.wh-100 {
-        font-weight: 100;
-    }
-
-    &.wh-200 {
-        font-weight: 200;
-    }
-
-    &.wh-300 {
-        font-weight: 300;
-    }
-
-    &.wh-400 {
-        font-weight: 400;
-    }
-
-    &.wh-500 {
-        font-weight: 500;
-    }
-
-    &.wh-600 {
-        font-weight: 600;
-    }
-}
- 
-.a{
-    &.ud{
-        text-decoration:underline;
+    section {
+        max-width: 1024px;
     }
 }
 
@@ -79,7 +51,7 @@ h1,h2,h3,h4,h5,h6{
             color: #fff;
             height: 40px;
             line-height: 50px;
-            display: inline-block; 
+            display: inline-block;
         }
 
         nav {
@@ -119,8 +91,7 @@ h1,h2,h3,h4,h5,h6{
                 display: none;
             }
         }
-    }
-
+    } 
     .appContent {
         font-size: 0;
         height: 100%;
@@ -174,7 +145,10 @@ h1,h2,h3,h4,h5,h6{
 
             span.parameter {
                 color: #5591c1;
-                small{
+                font-weight: 500;
+                font-style: italic;
+
+                small {
                     font-size: .7rem;
                 }
             }
@@ -183,9 +157,11 @@ h1,h2,h3,h4,h5,h6{
                 font-size: .75rem;
             }
         }
-        section{
+
+        section {
             margin-bottom: 75px;
         }
+
         @media (min-width: 920px) {
             display: flex;
             justify-content: center;
@@ -196,6 +172,7 @@ h1,h2,h3,h4,h5,h6{
                 height: calc(100vh - 45px);
                 padding: 0px;
                 overflow-y: scroll;
+                font-size: .8rem;
 
                 .sidebar-content {
                     position: relative;
@@ -217,12 +194,92 @@ h1,h2,h3,h4,h5,h6{
         }
     }
 }
+// Parameters section
+.ParametersSection {
+    margin: 0 0 25px 0;
 
+    span {
+        display: block;
+    }
+
+    p {
+        font-weight: 400;
+        margin-left: 10px;
+    }
+}
 // Utils
 .responsive {
     width: 95%;
     max-width: 1920px;
     margin: 0 auto;
+}
+
+/// Custom class styles
+//// <p>
+.p {
+    // Size
+    &.sz-1 {
+        font-size: 1rem;
+    }
+
+    &.sz-2 {
+        font-size: 1.2rem;
+    }
+
+    &.sz-3 {
+        font-size: 1.3rem;
+    }
+    // Weight
+    &.wh-100 {
+        font-weight: 100;
+    }
+
+    &.wh-200 {
+        font-weight: 200;
+    }
+
+    &.wh-300 {
+        font-weight: 300;
+    }
+
+    &.wh-400 {
+        font-weight: 400;
+    }
+
+    &.wh-500 {
+        font-weight: 500;
+    }
+
+    &.wh-600 {
+        font-weight: 600;
+    }
+}
+
+//// <a>
+.a {
+    &.ud {
+        text-decoration: underline;
+    }
+}
+
+//// <div>
+.d {
+    // Max-width
+    &.mw-1024 {
+        max-width: 1024px;
+    }
+
+    &.mw-960 {
+        max-width: 960px;
+    }
+
+    &.mw-768 {
+        max-width: 768px;
+    }
+    // Margin
+    &.mrtb-1 {
+        margin: 1% 0;
+    }
 }
 
 // Scrollbars
@@ -251,11 +308,15 @@ h1,h2,h3,h4,h5,h6{
 code {
     pre {
         background: #343434;
-        padding-top: 15px;
+        padding: 15px 0;
         color: #e6e4c5;
-        overflow:auto;
+        overflow: auto;
+        font-family: "Avenir";
+
         i {
             color: #5591c1;
+            font-weight: 600;
+            font-style: italic;
         }
 
         b {

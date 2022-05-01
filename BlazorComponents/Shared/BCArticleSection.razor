@@ -1,0 +1,46 @@
+﻿<main class="main-article-section">
+    <section>
+        <h2>@Title</h2>
+        <hr />
+        @Description
+    </section> 
+    <section>
+        <h3>Component parameters</h3>
+        <hr />
+        <div>
+            @ComponentParameters
+        </div>
+    </section>
+    <section>
+        <h3>Use in razor page</h3>
+        <hr />
+        <code>
+            <pre>
+@Example
+            </pre>
+        </code>
+    </section>
+    <section>
+        <h3>Result</h3>
+        <hr />
+        <div class="d mw-1024 mrtb-1">
+            @Result
+        </div>
+    </section>
+</main>
+@code {
+    [Parameter]
+    public String? Title { get; set; }
+    
+    [Parameter]
+    public RenderFragment? Description { get; set; }
+
+    [Parameter]
+    public RenderFragment? ComponentParameters { get; set; }
+
+    [Parameter]
+    public RenderFragment? Example { get; set; }
+
+    [Parameter]
+    public RenderFragment? Result { get; set; }
+}

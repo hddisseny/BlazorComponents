@@ -9,6 +9,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        box-sizing: border-box;s
     }
 
     .__bz_accordion .__bz_accordion-header {

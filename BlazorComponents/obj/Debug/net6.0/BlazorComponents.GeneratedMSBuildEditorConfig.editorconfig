@@ -43,12 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/BCArticleSection.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJDQXJ0aWNsZVNlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/BCHeader.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJDSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/BCNSidebar.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJDTlNpZGViYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/ParameterSection.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFBhcmFtZXRlclNlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/develop/csharp/BlazorComponents/BlazorComponents/_Imports.razor]

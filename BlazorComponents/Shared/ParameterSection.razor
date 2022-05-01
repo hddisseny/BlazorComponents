@@ -1,0 +1,20 @@
+﻿<div class="ParametersSection">
+    <span class="parameter">@Name <small>@Type</small></span>  
+    <span class="parameter-type">@TypeDescription</span> 
+    @Description
+</div>
+
+
+@code { 
+    [Parameter]
+    public RenderFragment? Name { get; set; }
+
+    [Parameter]
+    public RenderFragment? Type { get; set; }
+
+    [Parameter]
+    public RenderFragment? TypeDescription { get; set; }
+
+    [Parameter]
+    public RenderFragment? Description { get; set; }
+}

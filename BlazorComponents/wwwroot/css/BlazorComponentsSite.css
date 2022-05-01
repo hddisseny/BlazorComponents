@@ -12,36 +12,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.p.sz-1 {
-  font-size: 1rem;
+.main-article-section {
+  padding-top: 50px !important;
 }
-.p.sz-2 {
-  font-size: 1.2rem;
+.main-article-section h2, .main-article-section h3, .main-article-section hr {
+  margin: 0;
+  color: #47304a;
 }
-.p.sz-3 {
-  font-size: 1.3rem;
+.main-article-section hr {
+  margin: 5px 0 10px;
+  border: 1px solid #b067b9;
+  background-color: #b067b9;
 }
-.p.wh-100 {
-  font-weight: 100;
-}
-.p.wh-200 {
-  font-weight: 200;
-}
-.p.wh-300 {
-  font-weight: 300;
-}
-.p.wh-400 {
-  font-weight: 400;
-}
-.p.wh-500 {
-  font-weight: 500;
-}
-.p.wh-600 {
-  font-weight: 600;
-}
-
-.a.ud {
-  text-decoration: underline;
+.main-article-section section {
+  max-width: 1024px;
 }
 
 .appBootzor header {
@@ -140,6 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .appBootzor .appContent main span.parameter {
   color: #5591c1;
+  font-weight: 500;
+  font-style: italic;
 }
 .appBootzor .appContent main span.parameter small {
   font-size: 0.7rem;
@@ -161,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     height: calc(100vh - 45px);
     padding: 0px;
     overflow-y: scroll;
+    font-size: 0.8rem;
   }
   .appBootzor .appContent sidebar .sidebar-content {
     position: relative;
@@ -178,10 +165,66 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.ParametersSection {
+  margin: 0 0 25px 0;
+}
+.ParametersSection span {
+  display: block;
+}
+.ParametersSection p {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
 .responsive {
   width: 95%;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.p.sz-1 {
+  font-size: 1rem;
+}
+.p.sz-2 {
+  font-size: 1.2rem;
+}
+.p.sz-3 {
+  font-size: 1.3rem;
+}
+.p.wh-100 {
+  font-weight: 100;
+}
+.p.wh-200 {
+  font-weight: 200;
+}
+.p.wh-300 {
+  font-weight: 300;
+}
+.p.wh-400 {
+  font-weight: 400;
+}
+.p.wh-500 {
+  font-weight: 500;
+}
+.p.wh-600 {
+  font-weight: 600;
+}
+
+.a.ud {
+  text-decoration: underline;
+}
+
+.d.mw-1024 {
+  max-width: 1024px;
+}
+.d.mw-960 {
+  max-width: 960px;
+}
+.d.mw-768 {
+  max-width: 768px;
+}
+.d.mrtb-1 {
+  margin: 1% 0;
 }
 
 /* Works on Firefox */
@@ -207,15 +250,18 @@ h1, h2, h3, h4, h5, h6 {
 
 code pre {
   background: #343434;
-  padding-top: 15px;
+  padding: 15px 0;
   color: #e6e4c5;
   overflow: auto;
+  font-family: "Avenir";
 }
 code pre i {
   color: #5591c1;
+  font-weight: 600;
+  font-style: italic;
 }
 code pre b {
   color: #4e8952;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;EACA;;;AAOJ;EACI;;;AAMA;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;;AAKJ;EACI;;;AAOJ;EACI,kBAzDO;EA0DP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAIR;EACI;;AAGR;EACI;;AAEJ;EAjEJ;IAkEQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAOhB;EACI;EACA;EACA;;;AAIJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAKA;EACI;EACA;EACA;EACA;;AACA;EACI;;AAGJ;EACI%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;EACA;;;AAMJ;EACI;;;AAIJ;EACI;;AACA;EACI;EACA;;AAGJ;EACI;EACA;EACA;;AAGJ;EACI;;;AAOJ;EACI,kBA9BO;EA+BP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAIZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAIR;EACI;;AAIR;EACI;;AAGJ;EAtEJ;IAuEQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAMhB;EACI;;AAEA;EACI;;AAGJ;EACI;EACA;;;AAIR;EACI;EACA;EACA;;;AAOA;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;;AAMJ;EACI;;;AAOJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;;AAKR;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAKA;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI%22%7D */

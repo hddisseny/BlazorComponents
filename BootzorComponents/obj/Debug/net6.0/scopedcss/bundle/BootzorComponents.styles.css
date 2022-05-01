@@ -10,6 +10,7 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        box-sizing: border-box;s
     }
 
     .__bz_accordion .__bz_accordion-header[b-dvf4947fjl] {
@@ -65,6 +66,7 @@
     display: block;
     padding: 15px 20px;
     font-size: 1rem;
+    font-weight: 400;
     border: 1px solid var(--bz-color-default-border);
     background-color: var(--bz-color-default-bg);
     color: var(--bz-color-default-text);
