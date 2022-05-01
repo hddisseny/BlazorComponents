@@ -14,21 +14,32 @@
             <h2>Accordion</h2> 
             <hr />
             <section> 
-                <p>sdsadssdasd</p>
+                <p>Add accordion content to show and hide content.</p>
                 </section>
                <section>
                 <h3>Parameters</h3>
                 <hr />
                 <div>
-                    <span class="parameter">Collapssed <small>bool</small></span> 
+                    <span class="parameter">Collapsed <small>bool</small></span> 
                     <br /> 
                     <span class="parameter-type">true | false</span>
-                    <p>sdssd</p>
+                    <p>Initial state on load</p>
                 </div>
-                
+                </section>
+               <section>
                 <h3>Use in razor page</h3>
+                 <hr />
 <code>
     <pre>
+    &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
+        &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
+        &#60;AccordionContent&#62;
+            &#60;p&#62;Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Curabitur ac molestie mi. Etiam euismod in nibh quis facilisis. Donec ac lacinia dolor. 
+                Maecenas scelerisque, urna facilisis fringilla convallis&#60;/p&#62;
+        &#60;/AccordionContent&#62;
+    &#60;/<b>BZ_Accordion</b>&#62;
+
     &#60;<b>BZ_Accordion</b> <i>Collapsed</i>=true&#62;
         &#60;AccordionTitle>Title&#60;/AccordionTitle&#62;
         &#60;AccordionContent&#62;
@@ -41,6 +52,7 @@
 </code>
 
                 <h3>Result</h3>
+                <hr />
                 <BZ_Accordion Collapsed=true>
                      <AccordionTitle>Press here to show/hide</AccordionTitle>
                      <AccordionContent>

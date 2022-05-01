@@ -5,16 +5,49 @@
   padding: 0;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.p.sz-1 {
+  font-size: 1rem;
+}
+.p.sz-2 {
+  font-size: 1.2rem;
+}
+.p.sz-3 {
+  font-size: 1.3rem;
+}
+.p.wh-100 {
+  font-weight: 100;
+}
+.p.wh-200 {
+  font-weight: 200;
+}
+.p.wh-300 {
+  font-weight: 300;
+}
+.p.wh-400 {
+  font-weight: 400;
+}
+.p.wh-500 {
+  font-weight: 500;
+}
+.p.wh-600 {
+  font-weight: 600;
+}
+
+.a.ud {
+  text-decoration: underline;
+}
+
 .appBootzor header {
   background-color: #7E4984;
   width: 100%;
-  height: 40px;
+  height: 45px;
   z-index: 9999;
   position: fixed;
 }
@@ -24,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Special Elite", cursive;
   color: #fff;
   height: 40px;
-  line-height: 45px;
+  line-height: 50px;
   display: inline-block;
 }
 .appBootzor header nav {
@@ -39,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 .appBootzor header nav ul li {
   display: inline-block;
   height: 40px;
-  margin: 8px 15px;
+  margin: 10px 15px;
 }
 .appBootzor header nav ul li a {
   color: #fff;
@@ -61,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 .appBootzor .appContent {
   font-size: 0;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .appBootzor .appContent .sidebar-menu-mobile {
   display: block;
@@ -91,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   left: 0;
   top: 40px;
-  height: calc(100% - 40px);
+  height: calc(100% - 45px);
   overflow-y: scroll;
   z-index: 10;
 }
@@ -125,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .appBootzor .appContent sidebar {
     width: 320px;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 45px);
     padding: 0px;
     overflow-y: scroll;
   }
@@ -137,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .appBootzor .appContent main {
     width: calc(100% - 320px);
-    height: calc(100vh - 40px);
+    height: calc(100vh - 45px);
     overflow-y: scroll;
   }
   .appBootzor .appContent .sidebar-menu-mobile {
@@ -185,4 +218,4 @@ code pre b {
   color: #4e8952;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;;;AAMJ;EACI;;;AAIA;EACI,kBARO;EASP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAIR;EACI;;AAGR;EACI;;AAEJ;EAjEJ;IAkEQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAMhB;EACI;EACA;EACA;;;AAEJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAIA;EACI;EACA;EACA;EACA;;AACA;EACI;;AAGJ;EACI%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;EACA;;;AAOJ;EACI;;;AAMA;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;AAGJ;EACI;;;AAKJ;EACI;;;AAOJ;EACI,kBAzDO;EA0DP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAIR;EACI;;AAGR;EACI;;AAEJ;EAjEJ;IAkEQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAOhB;EACI;EACA;EACA;;;AAIJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAKA;EACI;EACA;EACA;EACA;;AACA;EACI;;AAGJ;EACI%22%7D */
