@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "qoW+lGbtwGXt7CWgdZyWBOK+N0OcSyWEtnb4uWozjLYLKsFHmH56Li1zAIa3eky0xplsv1pOJhx2MyWeROYZkQ==",
+  "dgSpecHash": "PaLHKlVn7fQX2nOuHC6lZPdNBzkYWhz5thwWagd9tIAdqM6ulByInxS5BXYvk0FRj+0JUioLRZTcjVhBg3vRxA==",
   "success": true,
   "projectFilePath": "C:\\develop\\csharp\\BlazorComponents\\BlazorComponents\\BlazorComponents.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\usuario\\.nuget\\packages\\buildwebcompiler\\1.12.405\\buildwebcompiler.1.12.405.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.2\\microsoft.aspnetcore.authorization.6.0.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.2\\microsoft.aspnetcore.components.6.0.2.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.2\\microsoft.aspnetcore.components.analyzers.6.0.2.nupkg.sha512",

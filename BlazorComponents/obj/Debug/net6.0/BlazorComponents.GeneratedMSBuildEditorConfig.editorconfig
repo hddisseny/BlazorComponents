@@ -23,6 +23,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9vdHpvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/components/Accordion.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29tcG9uZW50c1xBY2NvcmRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/components/Alerts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29tcG9uZW50c1xBbGVydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/components/Cards.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29tcG9uZW50c1xDYXJkcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/How-to.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG93LXRvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

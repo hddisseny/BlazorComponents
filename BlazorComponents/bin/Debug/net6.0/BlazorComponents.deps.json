@@ -8,14 +8,12 @@
     ".NETCoreApp,Version=v6.0": {
       "BlazorComponents/1.0.0": {
         "dependencies": {
-          "BootzorComponents": "1.0.0",
-          "BuildWebCompiler": "1.12.405"
+          "BootzorComponents": "1.0.0"
         },
         "runtime": {
           "BlazorComponents.dll": {}
         }
       },
-      "BuildWebCompiler/1.12.405": {},
       "Microsoft.AspNetCore.Authorization/6.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "6.0.2",
@@ -127,13 +125,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "BuildWebCompiler/1.12.405": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1l1RK0jV+5QjJM22J5IGHm/EFaB3JN0WorKnLLP6HRnnf5H4sU4IBdBnMwN1OrVmww/3ir8fhbV0ZNGX6Uqn5w==",
-      "path": "buildwebcompiler/1.12.405",
-      "hashPath": "buildwebcompiler.1.12.405.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/6.0.2": {
       "type": "package",

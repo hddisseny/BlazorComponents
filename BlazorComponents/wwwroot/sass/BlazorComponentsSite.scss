@@ -103,7 +103,7 @@ $--cl-primary: #7E4984;
                 width: 100%;
                 left: 0;
                 top: 40px;
-                height: 100%;
+                height: calc(100% - 40px);
                 overflow-y: scroll;
 
                 &.True {
@@ -118,7 +118,6 @@ $--cl-primary: #7E4984;
             display: inline-block;
             box-sizing: border-box;
             padding: 30px 10px 10px 10px;
-
         }
 
         @media (min-width: 920px) {
@@ -129,8 +128,9 @@ $--cl-primary: #7E4984;
             sidebar {
                 width: 320px;
                 height: calc(100vh - 40px);
-                padding: 0px; 
-                overflow-y:scroll;
+                padding: 0px;
+                overflow-y: scroll;
+
                 .sidebar-content {
                     position: relative;
                     display: block;
