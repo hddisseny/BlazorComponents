@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WObpb0QART8GRHnK+mM0LCj5kixUOj2hHxW2a8BSeh0=",
+  "Hash": "Sw3Fb1ZKYjCqIyVyZRI7jh1ZQeG8iubaFLbq6FAtbjs=",
   "Source": "BootzorComponents",
   "BasePath": "_content/BootzorComponents",
   "Mode": "Default",
@@ -406,6 +406,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-big.png",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "assets/master/logo-big.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\master\\logo-big.png"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-small.png",
+      "SourceId": "BootzorComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "BasePath": "_content/BootzorComponents",
+      "RelativePath": "assets/master/logo-small.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\master\\logo-small.png"
     },
     {
       "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logotipo.sketch",

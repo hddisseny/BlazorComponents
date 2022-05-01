@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorComponents", "BlazorComponents\BlazorComponents.csproj", "{5CD108A2-1FCD-4D7E-94D8-90BBC39E2A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorComponents", "BlazorComponents\BlazorComponents.csproj", "{5CD108A2-1FCD-4D7E-94D8-90BBC39E2A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BootzorComponents", "BootzorComponents\BootzorComponents.csproj", "{384C265B-3187-45E4-B617-FCB39582F6C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootzorComponents", "BootzorComponents\BootzorComponents.csproj", "{384C265B-3187-45E4-B617-FCB39582F6C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

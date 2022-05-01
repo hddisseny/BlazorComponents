@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "BuildWebCompiler/1.12.405": {
+        "type": "package",
+        "build": {
+          "build/BuildWebCompiler.targets": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.2": {
         "type": "package",
         "dependencies": {
@@ -189,6 +195,29 @@
     }
   },
   "libraries": {
+    "BuildWebCompiler/1.12.405": {
+      "sha512": "1l1RK0jV+5QjJM22J5IGHm/EFaB3JN0WorKnLLP6HRnnf5H4sU4IBdBnMwN1OrVmww/3ir8fhbV0ZNGX6Uqn5w==",
+      "type": "package",
+      "path": "buildwebcompiler/1.12.405",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/BuildWebCompiler.targets",
+        "buildwebcompiler.1.12.405.nupkg.sha512",
+        "buildwebcompiler.nuspec",
+        "tools/net46/NUglify.dll",
+        "tools/net46/Newtonsoft.Json.dll",
+        "tools/net46/WebCompiler.exe",
+        "tools/netcoreapp2.0/NUglify.dll",
+        "tools/netcoreapp2.0/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.0/WebCompiler.dll",
+        "tools/netcoreapp2.0/WebCompiler.runtimeconfig.json",
+        "tools/netstandard2.0/NUglify.dll",
+        "tools/netstandard2.0/Newtonsoft.Json.dll",
+        "tools/netstandard2.0/WebCompiler.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/6.0.2": {
       "sha512": "AjwO1PjN75weiC0KzznybEZh5rr+VjH3c2wvuRT6Qmd8cv2+/6hBn/peelGkZUzYBY0l7QA22jwmjKKeeNYsIQ==",
       "type": "package",
@@ -509,7 +538,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BootzorComponents >= 1.0.0"
+      "BootzorComponents >= 1.0.0",
+      "BuildWebCompiler >= 1.12.405"
     ]
   },
   "packageFolders": {
@@ -559,6 +589,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "BuildWebCompiler": {
+            "target": "Package",
+            "version": "[1.12.405, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,0 +1,158 @@
+﻿html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.appBootzor header {
+  background-color: #7E4984;
+  width: 100%;
+  height: 40px;
+  z-index: 9999;
+  position: fixed;
+}
+.appBootzor header h1.logo {
+  margin: 0;
+  font-weight: 400;
+  font-family: "Special Elite", cursive;
+  color: #fff;
+  height: 40px;
+  line-height: 45px;
+  display: inline-block;
+}
+.appBootzor header nav {
+  display: inline-block;
+  vertical-align: top;
+}
+.appBootzor header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.appBootzor header nav ul li {
+  display: inline-block;
+  height: 40px;
+  margin: 8px 15px;
+}
+.appBootzor header nav ul li a {
+  color: #fff;
+  opacity: 0.75;
+  transition: all 0.333s ease;
+  font-size: 0.75rem;
+}
+.appBootzor header nav ul li a:hover {
+  opacity: 1;
+}
+@media (min-width: 920px) {
+  .appBootzor header {
+    position: relative;
+  }
+  .appBootzor header .sidebar-menu-mobile {
+    display: none;
+  }
+}
+.appBootzor .appContent {
+  font-size: 0;
+  height: 100%;
+  padding-top: 10px;
+}
+.appBootzor .appContent .sidebar-menu-mobile {
+  display: block;
+  position: fixed;
+  top: 7px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background-color: #f00;
+  cursor: pointer;
+  z-index: 9999;
+}
+.appBootzor .appContent sidebar {
+  font-size: 1rem;
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.appBootzor .appContent sidebar .sidebar-content {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  top: 40px;
+  height: 100%;
+  overflow-y: scroll;
+}
+.appBootzor .appContent sidebar .sidebar-content.True {
+  display: block;
+}
+.appBootzor .appContent main {
+  font-size: 1rem;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px;
+}
+@media (min-width: 920px) {
+  .appBootzor .appContent {
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .appBootzor .appContent sidebar {
+    width: 320px;
+    height: calc(100vh - 40px);
+    padding: 0px;
+    overflow-y: scroll;
+  }
+  .appBootzor .appContent sidebar .sidebar-content {
+    position: relative;
+    display: block;
+    top: 0;
+    padding: 30px 10px 10px 10px;
+  }
+  .appBootzor .appContent main {
+    width: calc(100% - 320px);
+    height: calc(100vh - 40px);
+    overflow-y: scroll;
+  }
+  .appBootzor .appContent .sidebar-menu-mobile {
+    display: none;
+  }
+}
+
+.responsive {
+  width: 95%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7E4984 #f4f4f4;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7E4984;
+  border-radius: 20px;
+  border: 3px solid #fff;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;;;AAQA;EACI,kBALO;EAMP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAIJ;EArDJ;IAsDQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EACA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAMhB;EACI;EACA;EACA;;;AAEJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA%22%7D */

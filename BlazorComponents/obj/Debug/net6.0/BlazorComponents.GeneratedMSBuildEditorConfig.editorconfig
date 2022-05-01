@@ -19,8 +19,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/Bootzor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9vdHpvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/How-to.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG93LXRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/develop/csharp/BlazorComponents/BlazorComponents/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/BCHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJDSGVhZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/develop/csharp/BlazorComponents/BlazorComponents/Shared/BCNSidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJDTlNpZGViYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/develop/csharp/BlazorComponents/BlazorComponents/_Imports.razor]

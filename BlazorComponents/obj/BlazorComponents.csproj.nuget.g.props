@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\usuario\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgBuildWebCompiler Condition=" '$(PkgBuildWebCompiler)' == '' ">C:\Users\usuario\.nuget\packages\buildwebcompiler\1.12.405</PkgBuildWebCompiler>
+  </PropertyGroup>
 </Project>
