@@ -8,6 +8,7 @@
     background-color: var(--bz-color-default-bg);
     color: var(--bz-color-default-text);
     margin: 1%;
+    max-width: 768px;
 }
 
     .__bz_alert[b-bhw43rw099]  a {

@@ -1,5 +1,5 @@
 .__bz_accordion[b-dvf4947fjl] {
-    border: 1px solid #cacaca;
+    
 }
 
     .__bz_accordion .__bz_accordion-header[b-dvf4947fjl] {
@@ -15,7 +15,7 @@
         width: 100%;
         text-decoration: none;
         color: initial;
-        border: 1px solid #cacaca;
+        border-bottom: 1px solid #cacaca;
         cursor: pointer;
     }
 

@@ -11,7 +11,103 @@
     <div class="appContent responsive"> 
         <BCNSidebar/>
         <main>
-            <h2>How to</h2>
+            <h2>Alerts</h2>
+            <hr />
+            <section> 
+                <p>Provide contextual feedback messages for user actions with different alert messages. The element has a maximum horizontal size of 1024px.</p>
+                 </section>
+               <section>
+                <h3>Parameters</h3>
+                <hr />
+                <div>
+                    <span class="parameter">TypeAlert <small>string</small></span>
+                    <br />
+                    <span class="parameter-type"><i>primary | success | fail | warning | info</i></span> 
+                    <p>Class that is assigned to it to establish its state</p>
+                </div>
+                
+                <div>
+                    <span class="parameter">Icon <small>string</small></span> 
+                    <br /> 
+                    <span class="parameter-type"><i>info | success | warning</i></span>
+                    <p>Select an icon to display before the text</p>
+                </div>
+               </section>
+               <section>
+                <h3>Use in razor page</h3>
+                <hr />
+<code>
+    <pre> 
+    &#60;<b>BZ_Alert</b>&#62;Alert TypeAlert : Default&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="primary"&#62;Alert TypeAlert : primary&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="success"&#62;Alert TypeAlert : success&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="fail"&#62;Alert TypeAlert : fail&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="warning"&#62;Alert TypeAlert : warning&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="info"&#62;Alert TypeAlert : info&#60;/<b>BZ_Alert</b>&#62;
+
+    </pre>
+</code>
+ 
+                <h3>Result</h3>
+                <hr />
+                <BZ_Alert>Alert TypeAlert : Default</BZ_Alert>
+                <BZ_Alert TypeAlert="primary">Alert TypeAlert : primary</BZ_Alert>
+                <BZ_Alert TypeAlert="success">Alert TypeAlert : success</BZ_Alert>
+                <BZ_Alert TypeAlert="fail">Alert TypeAlert : fail</BZ_Alert>
+                <BZ_Alert TypeAlert="warning">Alert TypeAlert : warning</BZ_Alert>
+                <BZ_Alert TypeAlert="info">Alert TypeAlert : info</BZ_Alert>
+                <br />
+                </section>
+               <section>
+            <h3>With link inside</h3>
+            <hr />
+
+            <h3>Use in razor page</h3>
+            <hr />
+
+<code>
+    <pre> 
+    &#60;<b>BZ_Alert</b>&#62;A example of alert &#60;a href="#"&#62;with link&#60;/a&#62;. Don't Click&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>TypeAlert</i>="primary"&#62;A example of alert &#60;a href="#"&#62;with link&#60;/a&#62;. Don't Click&#60;/<b>BZ_Alert</b>&#62;
+    ...
+    </pre>
+</code>
+            
+            <h4>Result</h4>
+            <hr />
+
+            <BZ_Alert>A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <BZ_Alert TypeAlert="primary">A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <BZ_Alert TypeAlert="success">A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <BZ_Alert TypeAlert="fail">A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <BZ_Alert TypeAlert="warning">A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <BZ_Alert TypeAlert="info">A example of alert <a href="#">with link</a>. Don't Click</BZ_Alert>
+            <br />
+            </section>
+               <section>
+            <h3>With icons</h3>
+            <hr />
+
+            <h4>Use in razor page</h4>
+            <hr />
+<code>
+    <pre>  
+    &#60;<b>BZ_Alert</b> <i>Icon</i>="info" <i>TypeAlert</i>="primary"&#62;Alert TypeAlert : primary&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>Icon</i>="success" <i>TypeAlert</i>="success"&#62;Alert TypeAlert : success&#60;/<b>BZ_Alert</b>&#62;
+    &#60;<b>BZ_Alert</b> <i>Icon</i>="warning" <i>TypeAlert</i>="fail"&#62;Alert TypeAlert : fail&#60;/<b>BZ_Alert</b>&#62; 
+   
+
+</pre>
+</code>
+
+            <h4>Result</h4>
+            <hr />
+
+            <BZ_Alert Icon="info" TypeAlert="primary">Alert TypeAlert : primary</BZ_Alert>
+            <BZ_Alert Icon="success" TypeAlert="success">Alert TypeAlert : success</BZ_Alert>
+            <BZ_Alert Icon="warning" TypeAlert="fail">Alert TypeAlert : fail</BZ_Alert> 
+        </section>
+
         </main>
     </div>
 </div>

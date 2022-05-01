@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
 .appBootzor header {
   background-color: #7E4984;
   width: 100%;
@@ -89,6 +93,7 @@
   top: 40px;
   height: calc(100% - 40px);
   overflow-y: scroll;
+  z-index: 10;
 }
 .appBootzor .appContent sidebar .sidebar-content.True {
   display: block;
@@ -98,7 +103,19 @@
   width: 100%;
   display: inline-block;
   box-sizing: border-box;
-  padding: 30px 10px 10px 10px;
+  padding: 20px;
+}
+.appBootzor .appContent main span.parameter {
+  color: #5591c1;
+}
+.appBootzor .appContent main span.parameter small {
+  font-size: 0.7rem;
+}
+.appBootzor .appContent main span.parameter-type {
+  font-size: 0.75rem;
+}
+.appBootzor .appContent section {
+  margin-bottom: 75px;
 }
 @media (min-width: 920px) {
   .appBootzor .appContent {
@@ -155,4 +172,17 @@
   border: 3px solid #fff;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;;;AAQA;EACI,kBALO;EAMP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAIJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAGJ;EApDJ;IAqDQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAMhB;EACI;EACA;EACA;;;AAEJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA%22%7D */
+code pre {
+  background: #343434;
+  padding-top: 15px;
+  color: #e6e4c5;
+  overflow: auto;
+}
+code pre i {
+  color: #5591c1;
+}
+code pre b {
+  color: #4e8952;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22file:///C:/develop/csharp/BlazorComponents/BlazorComponents/wwwroot/sass/BlazorComponentsSite.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAAC;EACG;EACA;EACA;EACA;EACA;EACA;;;AAMJ;EACI;;;AAIA;EACI,kBARO;EASP;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAEA;EACI;;AASpB;EA/CJ;IAgDQ;;EAEA;IACI;;;AAKZ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAKZ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;;AACA;EACI;;AAIR;EACI;;AAGR;EACI;;AAEJ;EAjEJ;IAkEQ;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAEA;IACI;IACA;IACA;IACA;;EAIR;IACI;IACA;IACA;;EAGJ;IACI;;;;AAMhB;EACI;EACA;EACA;;;AAEJ;AACA;EACI;EACA;;;AAGJ;AACA;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;EACA;;;AAIA;EACI;EACA;EACA;EACA;;AACA;EACI;;AAGJ;EACI%22%7D */

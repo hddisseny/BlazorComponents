@@ -9,7 +9,10 @@
 }
 // App Colors
 $--cl-primary: #7E4984;
-
+// Main headers styles
+h1,h2,h3,h4,h5,h6{
+    font-weight:400;
+}
 // App
 .appBootzor {
     header {
@@ -85,7 +88,6 @@ $--cl-primary: #7E4984;
             z-index: 9999;
         }
 
-
         sidebar {
             font-size: 1rem;
             width: 100%;
@@ -105,6 +107,7 @@ $--cl-primary: #7E4984;
                 top: 40px;
                 height: calc(100% - 40px);
                 overflow-y: scroll;
+                z-index: 10;
 
                 &.True {
                     display: block;
@@ -117,9 +120,22 @@ $--cl-primary: #7E4984;
             width: 100%;
             display: inline-block;
             box-sizing: border-box;
-            padding: 30px 10px 10px 10px;
-        }
+            padding: 20px;
 
+            span.parameter {
+                color: #5591c1;
+                small{
+                    font-size: .7rem;
+                }
+            }
+
+            span.parameter-type {
+                font-size: .75rem;
+            }
+        }
+        section{
+            margin-bottom: 75px;
+        }
         @media (min-width: 920px) {
             display: flex;
             justify-content: center;
@@ -176,4 +192,20 @@ $--cl-primary: #7E4984;
     background-color: #7E4984;
     border-radius: 20px;
     border: 3px solid #fff;
+}
+
+code {
+    pre {
+        background: #343434;
+        padding-top: 15px;
+        color: #e6e4c5;
+        overflow:auto;
+        i {
+            color: #5591c1;
+        }
+
+        b {
+            color: #4e8952;
+        }
+    }
 }
