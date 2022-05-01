@@ -17,3 +17,4 @@ C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorCom
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\ref\BootzorComponents.dll
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Accordion\BZ_Accordion.razor.rz.scp.css
 C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Alert\BZ_Alert.razor.rz.scp.css
+C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Card\BZ_Card.razor.rz.scp.css

@@ -1,5 +1,5 @@
 ﻿@using BootzorComponents.Components.Accordion
-@using BootzorComponents.Components.Alert
+@using BootzorComponents.Components.Card
 @page "/components/cards"
 
 <PageTitle>BlazorComponents - Bootzor</PageTitle>
@@ -9,10 +9,215 @@
         <BCHeader/>
     </header>
     <div class="appContent responsive"> 
-        <BCNSidebar/>
-        <main>
-            <h2>How to</h2>
-        </main>
+        <BCNSidebar/> 
+        <BCArticleSection Title="Cards">
+            <Description>
+                <p>Card elements are defined by default with a display:flex for use in containers of the same type.</p>
+                <p>The size of the card is defined by default at 14rem, and can be overwritten by parameters.</p>
+            </Description>
+            <ComponentParameters>
+
+                <ParameterSection>
+                    <Name>ImageSource</Name>
+                    <Type>string</Type>
+                    <TypeDescription>Image source</TypeDescription>
+                    <Description>
+                        <p>Image source to put on card header</p>
+                    </Description>
+                </ParameterSection>     
+                
+                <ParameterSection>
+                    <Name>Width</Name>
+                    <Type>string</Type>
+                    <TypeDescription>Width</TypeDescription>
+                    <Description>
+                        <p>Define the width of the card by expressing it in a string that is passed to the css width attribute.</p>
+                        <p>The parameters it can receive:</p>
+                        <ul>
+                            <li>14rem</li>
+                            <li>200px</li>
+                            <li>100%</li>
+                        </ul>
+                    </Description>
+                </ParameterSection>
+                
+                <ParameterSection>
+                    <Name>Header</Name>
+                    <Type>RenderFragment</Type>
+                    <TypeDescription>Header</TypeDescription>
+                    <Description>
+                        <p>Header card html title.</p>
+                    </Description>
+                </ParameterSection> 
+
+                <ParameterSection>
+                    <Name>ContentTitle</Name>
+                    <Type>RenderFragment</Type>
+                    <TypeDescription>Title</TypeDescription>
+                    <Description>
+                        <p>Card html title.</p>
+                    </Description>
+                </ParameterSection>      
+
+                <ParameterSection>
+                    <Name>Content</Name>
+                    <Type>RenderFragment</Type>
+                    <TypeDescription>Content</TypeDescription>
+                    <Description>
+                        <p>Card html content.</p>
+                    </Description>
+                </ParameterSection> 
+
+            </ComponentParameters>
+            <Example>
+                // Basic usage
+                // Card 1
+                &#60;<b>BZ_Card</b> <i>ImageSource</i>=true&#62;
+                    &#60;<i>ContentTitle</i>&#62;
+                        &#60;h3&#62;Card 1 No image&#60;/h3&#62;                    
+                    &#60;<i>/ContentTitle</i>&#62;
+                    &#60;<i>Content</i>&#62;
+                        &#60;p&#62;Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.&#60;/p&#62;                                   
+                        &#60;p&#62;More extra text etc, etc, etc...&#60;/p&#62;
+                    &#60;<i>/Content</i>&#62;
+                &#60;/<i>BZ_Card</i>&#62;
+                ...
+
+                // With links
+                &#60;<b>BZ_Card</b> <i>ImageSource</i>=true&#62;
+                    &#60;<i>ContentTitle</i>&#62;
+                        &#60;h3&#62;Card 2 title&#60;/h3&#62;                    
+                    &#60;<i>/ContentTitle</i>&#62;
+                    &#60;<i>Content</i>&#62;
+                        &#60;p&#62;Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.&#60;/p&#62;     
+                        &#60;a href="#" class="alink"&#62;Card link&#60;/a&#62;
+                        &#60;a href="#" class="alink"&#62;Another link&#60;/a&#62;
+                    &#60;<i>/Content</i>&#62;
+                &#60;/<i>BZ_Card</i>&#62;
+
+                // With headers
+                &#60;<b>BZ_Card</b> <i>ImageSource</i>=true&#62;
+                    &#60;<i>Header</i>&#62;
+                         &#60;h3&#62;Title&#60;/h3&#62; 
+                    &#60;<i>Header</i>&#62;
+                    &#60;<i>ContentTitle</i>&#62;
+                        &#60;h3&#62;Card 2 title&#60;/h3&#62;                    
+                    &#60;<i>/ContentTitle</i>&#62;
+                    &#60;<i>Content</i>&#62;
+                        &#60;p&#62;Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.&#60;/p&#62;     
+                        &#60;a href="#" class="alink"&#62;Card link&#60;/a&#62;
+                        &#60;a href="#" class="alink"&#62;Another link&#60;/a&#62;
+                    &#60;<i>/Content</i>&#62;
+                &#60;/<i>BZ_Card</i>&#62;
+            </Example>
+            <Result>
+                <h4>Basic usage</h4>
+                <div class="d dfx cgap-10">
+                      <BZ_Card ImageSource="https://picsum.photos/200/301">
+                        <ContentTitle>
+                            <h3>Card 2 title</h3>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                        </Content>
+                    </BZ_Card> 
+                    <BZ_Card ImageSource="https://picsum.photos/201/301">
+                        <ContentTitle>
+                            <h3>Card 2 title</h3>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                        </Content>
+                    </BZ_Card>
+                      <BZ_Card ImageSource="https://picsum.photos/202/301">
+                        <ContentTitle>
+                            <h3>Card 2 title</h3>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                        </Content>
+                    </BZ_Card>
+                </div>
+
+                <h4>With links</h4>
+                <div class="d dfx cgap-10">
+                    <BZ_Card Width="20rem">
+                        <ContentTitle>
+                            <h3>Card 1 No image</h3>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                            <p>More extra text etc, etc, etc...</p>
+                            <a href="#" class="alink">Card link</a>
+                            <a href="#" class="alink">Another link</a>
+                        </Content>
+                    </BZ_Card>  
+                    <BZ_Card ImageSource="https://picsum.photos/202/301">
+                        <ContentTitle>
+                            <h3>Card 2 title</h3>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                        </Content>
+                    </BZ_Card>
+                </div>
+
+                <h4>With headers</h4>
+                <div class="d dfx cgap-10">
+                    <BZ_Card ImageSource="https://picsum.photos/202/301">
+                        <Header>
+                            <h3>Title</h3>
+                        </Header>
+                        <ContentTitle>
+                            <h4>Card 1 No image</h4>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                            <p>More extra text etc, etc, etc...</p>
+                            <a href="#" class="alink">Card link</a>
+                            <a href="#" class="alink">Another link</a>
+                        </Content>
+                    </BZ_Card>  
+                    
+                    <BZ_Card ImageSource="https://picsum.photos/200/301">
+                        <Header>
+                            <h3>Title</h3>
+                        </Header>
+                        <ContentTitle>
+                            <h4>Card 1 No image</h4>
+                        </ContentTitle>
+                        <Content>
+                            <p>Some quick example text to build on the card title 
+                               and make up the bulk of the card's content.</p>
+                            <p>More extra text etc, etc, etc...</p>
+                            <a href="#" class="alink">Card link</a>
+                            <a href="#" class="alink">Another link</a>
+                        </Content>
+                    </BZ_Card>   
+                </div>
+
+                <h4>Row</h4>
+                <BZ_Card ImageSource="https://picsum.photos/200/301" Row=true Width="50%">
+                    <ContentTitle>
+                        <h3>Card 2 title</h3>
+                    </ContentTitle>
+                    <Content>
+                        <p>Some quick example text to build on the card title 
+                            and make up the bulk of the card's content.</p>
+                    </Content>
+                </BZ_Card> 
+
+            </Result>
+        </BCArticleSection> 
     </div>
 </div>
 
