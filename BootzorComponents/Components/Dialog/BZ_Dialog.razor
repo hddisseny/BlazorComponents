@@ -1,0 +1,108 @@
+﻿
+@if(ShowModal){
+    <div class="__gm_Modal @(!Overlay ? "__gm_Modal-override-overlay":"")">
+        <div class="__gm_Modal-frame @Position.ToString()">
+            <div class="__gm_Modal-frame__content">
+
+                <div class="__gm_Modal-frame__content-header __gm_Modal-frame__content-header-custom-style">
+                
+                    <h4 class="__gm_Modal-frame__content-header__title">
+                        @Title
+                    </h4>
+
+                    <button type="button" class="__gm_Modal-frame__content-header__button-close" @onclick="@(() => Click_ModalResult(false))">&times;</button>
+                </div>
+
+                <div class="__gm_Modal-frame__content-body">
+                    @Content
+                </div>
+
+                <div class="__gm_Modal-frame__content-footer">
+                    @switch (DialogType)
+                    {
+                        case CollectionDialogTypes.Ok:
+                            <button type="button" class="__gm_Modal-frame__content-footer__button-ok" @onclick=@(()=>Click_ModalResult(true))>OK</button>
+                            break;
+                        case CollectionDialogTypes.OkCancel:
+                            <button type="button" class="__gm_Modal-frame__content-footer__button-cancel" @onclick="@(()=>Click_ModalResult(false))">Cancel</button>
+                            <button type="button" class="__gm_Modal-frame__content-footer__button-ok" @onclick=@(()=>Click_ModalResult(true))>OK</button>
+                            break;
+                        case CollectionDialogTypes.Cancel:
+                            <button type="button" class="__gm_Modal-frame__content-footer__button-cancel" @onclick="@(()=>Click_ModalResult(false))">Cancel</button>
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    /// <summary>
+    /// Título del modal
+    /// </summary>
+    [Parameter, EditorRequired]
+    public RenderFragment Title { get; set; }
+
+    /// <summary>
+    /// Contenido del modal
+    /// </summary>
+    [Parameter, EditorRequired]
+    public RenderFragment Content { get; set; }
+
+    /// <summary>
+    /// Indica si el overlay está activo
+    /// </summary>
+    [Parameter]
+    public bool Overlay { get; set; } = true;
+
+    /// <summary>
+    /// Resultado de la pulsación de los botones
+    /// </summary>
+    [Parameter, EditorRequired]
+    public EventCallback<bool> ResultModal { get; set; }
+
+    /// <summary>
+    /// Enumerador de diferentes opciones en la configuración de botones
+    /// </summary>
+    [Parameter, EditorRequired]
+    public CollectionDialogTypes DialogType { get; set; }
+
+    /// <summary>
+    /// Posición del modal
+    /// </summary>
+    [Parameter]
+    public DialogPosition Position { get; set; } = DialogPosition.Bottom;
+
+    /// <summary>
+    /// Callback al presionar el botón Ok, Delete
+    /// </summary>
+    /// <returns>Invoca al método pasado por parámetro</returns>
+    private Task Click_ModalResult(bool result)
+    {
+        ShowModal = false;
+        return ResultModal.InvokeAsync(result);
+    }
+
+    /// <summary>
+    /// Indica si ha de mostrar el modal, por defecto en false.
+    /// </summary>
+    [Parameter]
+    public bool ShowModal { get; set; } = false;
+
+    /// <summary>
+    /// Colección con los diferentes tipos de configuraciones de botón a mostrar.
+    /// </summary>
+    public enum CollectionDialogTypes
+    {
+        Ok,
+        OkCancel,
+        Cancel
+    }    
+    
+    public enum DialogPosition
+    {
+        Top,
+        Bottom
+    }
+}

@@ -1,0 +1,140 @@
+﻿@using BootzorComponents.Components.Accordion
+@using BootzorComponents.Components.Alert
+@using BootzorComponents.Components.Dialog
+
+@page "/components/dialog"
+
+<PageTitle>BlazorComponents - Bootzor</PageTitle>
+  
+<div class="appBootzor">
+    <header>
+        <BCHeader/>
+    </header>
+    <div class="appContent responsive"> 
+        <BCNSidebar/> 
+
+        <BCArticleSection Title="Accordion">
+            <Description>
+                <p>Add dialog modal to show any confirmation box or alert.</p>
+            </Description>
+
+            <ComponentParameters>
+                                
+                                          
+                <ParameterSection>
+                    <Name>ShowModal</Name>
+                    <Type>bool</Type>
+                    <TypeDescription>true | false</TypeDescription>
+                    <Description>
+                        <p>Indicates if the modal has to appear.</p>
+                    </Description>
+                </ParameterSection>            
+                
+                <ParameterSection>
+                    <Name>DialogType</Name>
+                    <Type>BZ_Dialog.CollectionDialogTypes</Type>
+                    <TypeDescription>Ok | OkCancel | Cancel</TypeDescription>
+                    <Description>
+                        <p>Indicates the numbner of buttons.</p>
+                    </Description>
+                </ParameterSection>                  
+                
+                <ParameterSection>
+                    <Name>ResultModal</Name>
+                    <Type>EventCallback&#60;bool&#62;</Type>
+                    <Description>
+                        <p>EventCallback to have the result when press a button cancel or ok.</p>
+                    </Description>
+                </ParameterSection>   
+                
+                           
+                <ParameterSection>
+                    <Name>Overlay</Name>
+                    <Type>bool</Type>
+                    <TypeDescription>true | false</TypeDescription>
+                    <Description>
+                        <p>Indicate if the overlay need to appear or not.</p>
+                    </Description>
+                </ParameterSection>            
+                
+                           
+                <ParameterSection>
+                    <Name>Position</Name>
+                    <Type>BZ_Dialog.DialogPosition</Type>
+                    <TypeDescription>top | bottom</TypeDescription>
+                    <Description>
+                        <p>Position of the dialog.</p>
+                    </Description>
+                </ParameterSection>    
+
+
+            </ComponentParameters>
+
+            <Example>
+                &#60;<b>BZ_Dialog</b> <i>DialogType</i>="BZ_Dialog.CollectionDialogTypes.OkCancel"&#62;
+                    <i>ResultModal</i>="EventCallback&#60;bool"&#60;
+                    <i>Position</i>="BZ_Dialog.DialogPosition.Top"
+                    <i>Overlay</i>="BZ_Dialog.DialogPosition.Top"
+
+                    &#60;Title&#62;
+                        &#60;p&#62;Title&#60;/p&#62;
+                    &#60;/Title&#62;
+                    
+                    &#60;Content&#62;
+                        &#60;p&#62;FragmentRender Content&#60;/p&#62;
+                    &#60;/Content&#62;
+
+                &#60;/<b>BZ_Dialog</b>&#62;
+            </Example>
+
+            
+            <Result>
+
+                <button @onclick="@(() => ShowModalWithOverlay(BZ_Dialog.DialogPosition.Top))" >Dialog position top</button>
+                <button @onclick="@(() => ShowModalWithOverlay(BZ_Dialog.DialogPosition.Bottom))" >Dialog position bottom</button>
+
+                <button @onclick="@(() => ShowModalWithoutOverlay())" >Dialog without owerlay</button>
+
+                <BZ_Dialog  @ref="ModalDialog"
+                    DialogType="BZ_Dialog.CollectionDialogTypes.OkCancel"
+                    ResultModal="EventResult" >
+
+                    <Title> 
+                        Ttitle 
+                    </Title>
+                    
+                    <Content>
+                        Content
+                    </Content>
+
+                </BZ_Dialog>
+
+            </Result>
+
+        </BCArticleSection> 
+    </div>
+</div>
+
+@code{
+    public BZ_Dialog ModalDialog;
+
+    public void ShowModalWithOverlay(BZ_Dialog.DialogPosition position)
+    {
+        ModalDialog.Overlay = true;
+        ModalDialog.Position = position;
+        ModalDialog.ShowModal = true;
+    }
+
+    public void ShowModalWithoutOverlay()
+    {
+        ModalDialog.Overlay = false;
+        ModalDialog.Position = BZ_Dialog.DialogPosition.Top;
+        ModalDialog.ShowModal = true;
+    }
+
+    public void EventResult(bool result)
+    {
+        Console.WriteLine($"eso {result}");
+        ModalDialog.ShowModal = false;
+    }
+}
