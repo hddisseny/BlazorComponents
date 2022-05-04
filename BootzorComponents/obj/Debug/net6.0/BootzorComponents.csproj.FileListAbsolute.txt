@@ -39,3 +39,4 @@ F:\MyHome\BlazorComponents\BootzorComponents\obj\Debug\net6.0\refint\BootzorComp
 F:\MyHome\BlazorComponents\BootzorComponents\obj\Debug\net6.0\BootzorComponents.pdb
 F:\MyHome\BlazorComponents\BootzorComponents\obj\Debug\net6.0\ref\BootzorComponents.dll
 F:\MyHome\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Dialog\BZ_Dialog.razor.rz.scp.css
+C:\develop\csharp\BlazorComponents\BootzorComponents\obj\Debug\net6.0\scopedcss\Components\Dialog\BZ_Dialog.razor.rz.scp.css

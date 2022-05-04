@@ -8,29 +8,29 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = BootzorComponents
 build_property.RootNamespace = BootzorComponents
-build_property.ProjectDir = F:\MyHome\BlazorComponents\BootzorComponents\
+build_property.ProjectDir = C:\develop\csharp\BlazorComponents\BootzorComponents\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\MyHome\BlazorComponents\BootzorComponents
+build_property.MSBuildProjectDirectory = C:\develop\csharp\BlazorComponents\BootzorComponents
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/MyHome/BlazorComponents/BootzorComponents/_Imports.razor]
+[C:/develop/csharp/BlazorComponents/BootzorComponents/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/MyHome/BlazorComponents/BootzorComponents/Components/Accordion/BZ_Accordion.razor]
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Accordion/BZ_Accordion.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvcmRpb25cQlpfQWNjb3JkaW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-dvf4947fjl
 
-[F:/MyHome/BlazorComponents/BootzorComponents/Components/Alert/BZ_Alert.razor]
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Alert/BZ_Alert.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGVydFxCWl9BbGVydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-bhw43rw099
 
-[F:/MyHome/BlazorComponents/BootzorComponents/Components/Card/BZ_Card.razor]
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Card/BZ_Card.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkXEJaX0NhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nxbye4fymn
 
-[F:/MyHome/BlazorComponents/BootzorComponents/Components/Dialog/BZ_Dialog.razor]
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Dialog/BZ_Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcQlpfRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-fezrfy3cna

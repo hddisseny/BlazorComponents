@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fq8AmCitEqIT43ttHsrPBYIZ+iUy4kETevVqck5AKIk=",
+  "Hash": "Sw3Fb1ZKYjCqIyVyZRI7jh1ZQeG8iubaFLbq6FAtbjs=",
   "Source": "BootzorComponents",
   "BasePath": "_content/BootzorComponents",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BootzorComponents\\wwwroot",
       "Source": "BootzorComponents",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css",
       "SourceId": "BootzorComponents",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "BootzorComponents.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css"
+      "OriginalItemSpec": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BootzorComponents.styles.css"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css",
       "SourceId": "BootzorComponents",
       "SourceType": "Computed",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "BootzorComponents.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css"
+      "OriginalItemSpec": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BootzorComponents.bundle.scp.css"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicon-codigo.txt",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicon-codigo.txt",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicon-codigo.txt",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicon-codigo.txt"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicon-full.jpg",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicon-full.jpg",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicon-full.jpg",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicon-full.jpg"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-144x144.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-144x144.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-144x144.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-144x144.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-192x192.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-192x192.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-192x192.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-192x192.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-36x36.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-36x36.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-36x36.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-36x36.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-48x48.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-48x48.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-48x48.png",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-48x48.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-72x72.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-72x72.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-72x72.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-72x72.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-96x96.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\android-icon-96x96.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/android-icon-96x96.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\android-icon-96x96.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-114x114.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-114x114.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-114x114.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-114x114.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-120x120.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-120x120.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-120x120.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-120x120.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-144x144.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-144x144.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-144x144.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-144x144.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-152x152.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-152x152.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-152x152.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-152x152.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-180x180.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-180x180.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-180x180.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-180x180.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-57x57.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-57x57.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-57x57.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-57x57.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-60x60.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-60x60.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-60x60.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-60x60.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-72x72.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-72x72.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-72x72.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-72x72.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-76x76.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-76x76.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-76x76.png",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-76x76.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-precomposed.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\apple-icon-precomposed.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/apple-icon-precomposed.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\apple-icon-precomposed.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\browserconfig.xml",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\browserconfig.xml",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/browserconfig.xml",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\browserconfig.xml"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\favicon.ico",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\favicons\\favicon.ico",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/favicons/favicon.ico",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\favicons\\favicon.ico"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-big.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-big.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/logo-big.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\logo-big.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-small.png",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logo-small.png",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/logo-small.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\logo-small.png"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logotipo.sketch",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\assets\\master\\logotipo.sketch",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "assets/master/logotipo.sketch",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\master\\logotipo.sketch"
     },
     {
-      "Identity": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\css\\Bootzor.css",
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\css\\Bootzor.css",
       "SourceId": "BootzorComponents",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\wwwroot\\",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\wwwroot\\",
       "BasePath": "_content/BootzorComponents",
       "RelativePath": "css/Bootzor.css",
       "AssetKind": "All",
