@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LogYN2cYVaVmMW5etxDEIhtaebLumOjxLUICb3IiP44=",
+  "Hash": "AMUM3uSa2x13ks75Sksj5HzKPfl7U9+mP84hr3hdSXQ=",
   "Source": "BlazorComponents",
   "BasePath": "_content/BlazorComponents",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\logo-small.png"
+    },
+    {
+      "Identity": "C:\\develop\\csharp\\BlazorComponents\\BlazorComponents\\wwwroot\\assets\\menu.png",
+      "SourceId": "BlazorComponents",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\develop\\csharp\\BlazorComponents\\BlazorComponents\\wwwroot\\",
+      "BasePath": "_content/BlazorComponents",
+      "RelativePath": "assets/menu.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\menu.png"
     },
     {
       "Identity": "C:\\develop\\csharp\\BlazorComponents\\BlazorComponents\\wwwroot\\css\\BlazorComponentsSite.css",

@@ -202,6 +202,23 @@
             height: 15rem;
             overflow-y: scroll;
         }
+/* _content/BootzorComponents/Components/Carousel/BZ_Carousel.razor.rz.scp.css */
+.slider[b-irt5u08ug7]{}
+    .slider .visor[b-irt5u08ug7] {
+        border: 1px solid black;
+        width:600px; 
+        height:300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .slider .visor .slide[b-irt5u08ug7] { 
+            position:absolute;
+            top: 0;
+            transition: all .666s ease-in;
+        }
+
+       
 /* _content/BootzorComponents/Components/Dialog/BZ_Dialog.razor.rz.scp.css */
 .__gm_Modal[b-fezrfy3cna] {
     position: fixed;

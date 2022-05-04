@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope = b-bhw43rw099
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJkXEJaX0NhcmQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-nxbye4fymn
 
+[C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Carousel/BZ_Carousel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDYXJvdXNlbFxCWl9DYXJvdXNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-irt5u08ug7
+
 [C:/develop/csharp/BlazorComponents/BootzorComponents/Components/Dialog/BZ_Dialog.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaWFsb2dcQlpfRGlhbG9nLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-fezrfy3cna

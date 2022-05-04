@@ -1,5 +1,6 @@
 ﻿@using BootzorComponents.Components.Accordion
 @using BootzorComponents.Components.Alert
+@using BootzorComponents.Components.Carousel
 @page "/playground"
 
 <PageTitle>BlazorComponents - Zona de test</PageTitle>
@@ -12,8 +13,19 @@
         <BCNSidebar/>
         <main>
             <h2>Playground</h2>
-            <p>Esta zona está diseñana como playground para poder ir haciendo pruebas con los componentes antes de integrarlos en la librería</p>
+            <p>Esta zona está diseñada como playground para poder ir haciendo pruebas con los componentes antes de integrarlos en la librería</p>
+            @*Zona de test*@
+                <BZ_Carousel ListImages=@List ImageWidth=300/> 
+            @*Fin de zona de test*@
         </main>
     </div>
 </div>
 
+@code {
+    public List<string> List = new List<string>()
+    {
+        "https://picsum.photos/600/300",
+        "https://picsum.photos/601/300",
+        "https://picsum.photos/602/300", 
+    };
+}
