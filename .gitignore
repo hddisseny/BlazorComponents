@@ -1,9 +1,11 @@
-BlazorComponents\bin
-BootzorComponents\bin
+BlazorComponents/bin
+BootzorComponents/bin
 
-BlazorComponents\obj
-BootzorComponents\obj
+BlazorComponents/obj
+BootzorComponents/obj
 
 .vs
 .vs/BlazorComponents/v17/.suo
 BlazorComponents/bin/*
+BlazorComponents/obj/*
+.vs/*
