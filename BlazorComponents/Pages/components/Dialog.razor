@@ -73,7 +73,6 @@
             </ComponentParameters>
 
             <Example>
-
                 &#60;<b>ZorDialog</b> <i>DialogType</i>="DialogPosition.OkCancel"&#62;
                     <i>ResultModal</i>="EventCallback&#60;bool&#62;"
                     <i>Position</i>="DialogPosition.Top"
@@ -102,9 +101,7 @@
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomRight,true))" >Dialog BottomRight</button>
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomLeft,true))" >Dialog BottomLeft</button>
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Center,true))" >Dialog Center</button>
-
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Top,false))" >Dialog without owerlay</button>
-
 
                 <ZorDialog  @ref="zorDialog"
                     DialogType="DialogTypes.OkCancel"
