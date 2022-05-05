@@ -1,2 +1,7 @@
 BlazorComponents\bin
 BootzorComponents\bin
+
+BlazorComponents\obj
+BootzorComponents\obj
+
+.vs
