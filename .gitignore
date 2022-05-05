@@ -9,3 +9,8 @@ BootzorComponents/obj
 BlazorComponents/bin/*
 BlazorComponents/obj/*
 .vs/*
+BootzorComponents/obj/staticwebassets.pack.sentinel
+BootzorComponents/obj/Debug/net6.0/scopedcss/Components/Dialog/BZ_Dialog.razor.rz.scp.css
+BlazorComponents/obj/staticwebassets.pack.sentinel
+BlazorComponents/obj/Debug/net6.0/BlazorComponents.csproj.AssemblyReference.cache
+.vs/BlazorComponents/v17/.suo
