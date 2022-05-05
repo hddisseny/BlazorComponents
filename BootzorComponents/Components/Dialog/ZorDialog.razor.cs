@@ -77,6 +77,7 @@ public partial class ZorDialog : ComponentBase
         TopRight,
         Bottom,
         BottomLeft,
-        BottomRight
+        BottomRight,
+        Center
     }
 }
