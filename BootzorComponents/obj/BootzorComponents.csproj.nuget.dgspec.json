@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj": {}
+    "F:\\MyHome\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj": {}
   },
   "projects": {
-    "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj": {
+    "F:\\MyHome\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj",
+        "projectUniqueName": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj",
         "projectName": "BootzorComponents",
-        "projectPath": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj",
-        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\develop\\csharp\\BlazorComponents\\BootzorComponents\\obj\\",
+        "projectPath": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\BootzorComponents.csproj",
+        "packagesPath": "C:\\Users\\RMN\\.nuget\\packages\\",
+        "outputPath": "F:\\MyHome\\BlazorComponents\\BootzorComponents\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RMN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://cis.core-ibl-inetum.services/nexus/repository/COVAM": {}
         },
         "frameworks": {
           "net6.0": {
@@ -64,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

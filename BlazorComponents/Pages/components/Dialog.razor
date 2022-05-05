@@ -1,6 +1,7 @@
 ﻿@using BootzorComponents.Components.Accordion
 @using BootzorComponents.Components.Alert
 @using BootzorComponents.Components.Dialog
+@using static BootzorComponents.Components.Dialog.ZorDialog;
 
 @page "/components/dialog"
 
@@ -90,24 +91,32 @@
             
             <Result>
 
-                <button @onclick="@(() => ShowModalWithOverlay(BZ_Dialog.DialogPosition.Top))" >Dialog position top</button>
-                <button @onclick="@(() => ShowModalWithOverlay(BZ_Dialog.DialogPosition.Bottom))" >Dialog position bottom</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Top,true))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.TopLeft,true))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.TopRight,true))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Bottom,true))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomRight,true))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomLeft,true))" >Dialog BottomLeft</button>
 
-                <button @onclick="@(() => ShowModalWithoutOverlay())" >Dialog without owerlay</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Top,false))" >Dialog without owerlay</button>
 
-                <BZ_Dialog @ref="ModalDialog"
-                    DialogType="BZ_Dialog.CollectionDialogTypes.OkCancel"
-                    ResultModal="EventResult" >
+
+                <ZorDialog  @ref="zorDialog"
+                    DialogType="DialogTypes.OkCancel"
+                    ResultModal="EventResult"
+                    Position=@Position
+                    ShowDialog=@ShowDialog
+                    Overlay=@ShowOverlay>
 
                     <Title> 
-                        Ttitle 
+                        Dialog title
                     </Title>
                     
                     <Content>
-                        Content
+                        This is the Content! 
                     </Content>
 
-                </BZ_Dialog>
+                </ZorDialog>
 
             </Result>
 
@@ -116,25 +125,22 @@
 </div>
 
 @code{
-    public BZ_Dialog ModalDialog;
 
-    public void ShowModalWithOverlay(BZ_Dialog.DialogPosition position)
-    {
-        ModalDialog.Overlay = true;
-        ModalDialog.Position = position;
-        ModalDialog.ShowModal = true;
-    }
+    public ZorDialog zorDialog;
 
-    public void ShowModalWithoutOverlay()
+    private bool ShowDialog { get; set; } = false;
+    private DialogPosition Position { get; set; } = DialogPosition.Top; 
+    private bool ShowOverlay { get; set; }= true;
+
+    public void ShowModalWithOverlay(DialogPosition position, bool showOverlay)
     {
-        ModalDialog.Overlay = false;
-        ModalDialog.Position = BZ_Dialog.DialogPosition.Top;
-        ModalDialog.ShowModal = true;
+        ShowOverlay = showOverlay;
+        Position = position;
+        ShowDialog = true;
     }
 
     public void EventResult(bool result)
     {
-        Console.WriteLine($"eso {result}");
-        ModalDialog.ShowModal = false;
+        ShowDialog = false;
     }
 }
