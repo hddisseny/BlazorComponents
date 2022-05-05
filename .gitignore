@@ -5,3 +5,5 @@ BlazorComponents\obj
 BootzorComponents\obj
 
 .vs
+.vs/BlazorComponents/v17/.suo
+BlazorComponents/bin/*
