@@ -16,7 +16,8 @@
 
         <BCArticleSection Title="Accordion">
             <Description>
-                <p>Add dialog modal to show any confirmation box or alert.</p>
+                <p>Add dialog to show any confirmation box or alert.</p>
+                <p><b>&#60;ZorDialog&#62;</b></p>
             </Description>
 
             <ComponentParameters>
@@ -36,7 +37,7 @@
                     <Type>BZ_Dialog.CollectionDialogTypes</Type>
                     <TypeDescription>Ok | OkCancel | Cancel</TypeDescription>
                     <Description>
-                        <p>Indicates the numbner of buttons.</p>
+                        <p>Indicates the number and type of buttons.</p>
                     </Description>
                 </ParameterSection>                  
                 
@@ -62,7 +63,7 @@
                 <ParameterSection>
                     <Name>Position</Name>
                     <Type>BZ_Dialog.DialogPosition</Type>
-                    <TypeDescription>top | bottom</TypeDescription>
+                    <TypeDescription>top | TopLeft | TopRight | bottom | BottomLeft | BottomRight | Center</TypeDescription>
                     <Description>
                         <p>Position of the dialog.</p>
                     </Description>
@@ -72,10 +73,19 @@
             </ComponentParameters>
 
             <Example>
+<<<<<<< HEAD
                 &#60;<b>BZ_Dialog</b> <i>DialogType</i>="BZ_Dialog.CollectionDialogTypes.OkCancel"&#62;
                     <i>ResultModal</i>="EventCallback&#60;bool&#62";
                     <i>Position</i>="BZ_Dialog.DialogPosition.Top"
                     <i>Overlay</i>="BZ_Dialog.DialogPosition.Top"
+=======
+                &#60;<b>ZorDialog</b> <i>DialogType</i>="DialogPosition.OkCancel"&#62;
+                    <i>ResultModal</i>="EventCallback&#60;bool&#62;"
+                    <i>Position</i>="DialogPosition.Top"
+                    <i>Overlay</i>= 
+                    <i>ShowDialog</i> = 
+                    <i>Overlay</i>= 
+>>>>>>> af5202a (Add Dialog Center position, change web documentation)
 
                     &#60;Title&#62;
                         &#60;p&#62;Title&#60;/p&#62;
@@ -85,7 +95,7 @@
                         &#60;p&#62;FragmentRender Content&#60;/p&#62;
                     &#60;/Content&#62;
 
-                &#60;/<b>BZ_Dialog</b>&#62;
+                &#60;/<b>ZorDialog</b>&#62;
             </Example>
 
             
@@ -97,6 +107,7 @@
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Bottom,true))" >Dialog Bottom</button>
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomRight,true))" >Dialog BottomRight</button>
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.BottomLeft,true))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Center,true))" >Dialog Center</button>
 
                 <button @onclick="@(() => ShowModalWithOverlay(DialogPosition.Top,false))" >Dialog without owerlay</button>
 
