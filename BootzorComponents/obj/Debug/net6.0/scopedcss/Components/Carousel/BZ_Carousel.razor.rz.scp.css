@@ -1,0 +1,16 @@
+.slider[b-irt5u08ug7]{}
+    .slider .visor[b-irt5u08ug7] {
+        border: 1px solid black;
+        width:600px; 
+        height:300px;
+        overflow: hidden;
+        position: relative;
+    }
+
+        .slider .visor .slide[b-irt5u08ug7] { 
+            position:absolute;
+            top: 0;
+            transition: all .666s ease-in;
+        }
+
+       
