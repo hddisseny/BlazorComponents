@@ -88,9 +88,9 @@
                 </ParameterSection>    
                 
                 <ParameterSection>
-                    <Name>Position</Name>
+                    <Name>Effect</Name>
                     <Type>BootzorComponents.ZorEnums.Effect</Type>
-                    <TypeDescription>None | Transition</TypeDescription>
+                    <TypeDescription>None | Transition | Shadow</TypeDescription>
                     <Description>
                         <p>Effect of the dialog.</p>
                     </Description>
@@ -159,6 +159,16 @@
                 <button @onclick="@(() => ShowModal(Position.Center,Effect.Transition,true))" >Dialog Center</button>
                 <button @onclick="@(() => ShowModal(Position.Top,Effect.Transition,false))" >Dialog without owerlay</button>
                 
+                <h4>Results with Shadow Effect</h4>
+                <button @onclick="@(() => ShowModal(Position.Top,Effect.Shadow,true))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModal(Position.TopLeft,Effect.Shadow,true))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModal(Position.TopRight,Effect.Shadow,true))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModal(Position.Bottom,Effect.Shadow,true))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModal(Position.BottomRight,Effect.Shadow,true))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModal(Position.BottomLeft,Effect.Shadow,true))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModal(Position.Center,Effect.Shadow,true))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModal(Position.Top,Effect.Shadow,false))" >Dialog without owerlay</button>
+                
                 <h4>Results with Transiction Effect Icon Information</h4>
                 <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,true,DialogIcon.Information))" >Dialog Top</button>
                 <button @onclick="@(() => ShowModalIcon(Position.TopLeft,Effect.Transition,true,DialogIcon.Information))" >Dialog TopLeft</button>
@@ -191,10 +201,10 @@
 
                 <h4>Results with Transiction Effect Icon Question Colors</h4>
                 <button @onclick="@(() => ShowModalIconColor(Position.Top,Effect.Transition,true,DialogIcon.Question, Color.SmoothWhite))" >Color SmoothWhite</button>
-                <button @onclick="@(() => ShowModalIconColor(Position.TopLeft,Effect.Transition,true,DialogIcon.Question, Color.White))" >Color White</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.TopLeft,Effect.None,true,DialogIcon.None, Color.White))" >Color White</button>
                 <button @onclick="@(() => ShowModalIconColor(Position.TopRight,Effect.Transition,true,DialogIcon.Question, Color.Dark))" >Color Dark</button>
-                <button @onclick="@(() => ShowModalIconColor(Position.Bottom,Effect.Transition,true,DialogIcon.Question, Color.Blue))" >Color Blue</button>
-                <button @onclick="@(() => ShowModalIconColor(Position.BottomRight,Effect.Transition,true,DialogIcon.Question, Color.Orange))" >Color Orange</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.Bottom,Effect.Transition,true,DialogIcon.Information, Color.Blue))" >Color Blue</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.BottomRight,Effect.None,true,DialogIcon.Warning, Color.Orange))" >Color Orange</button>
 
 
                 <ZorDialog  @ref="zorDialog"

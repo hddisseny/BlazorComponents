@@ -40,6 +40,21 @@
         }
     }
 
+.__bz_Dialog.ZorEffectTransition {
+    animation-name: in-transition-dialog-shadow;
+    animation-duration: 0.333s;
+}
+
+@keyframes in-transition-dialog-shadow {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
     .__bz_Dialog .ZorPositionBottom {
         bottom: 2.5%;
         left: 50%;
@@ -126,8 +141,6 @@
     bottom: 2.5%;
     left: 2.5%;
     transform: translateX(0%);
-    animation-name: in-transition-dialog-bottomleft;
-    animation-duration: 0.333s;
 }
     .__bz_Dialog .ZorPositionBottomLeft.ZorEffectTransition {
         animation-name: in-transition-dialog-bottomleft;
@@ -205,6 +218,7 @@
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark {
         background-color: #1F1B24;
         color:whitesmoke;
+        border: 1px solid #626262f2;
     }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorBlue {

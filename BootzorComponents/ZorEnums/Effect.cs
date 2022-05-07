@@ -4,4 +4,5 @@ public enum Effect
 {
     None,
     Transition,
+    Shadow
 }
