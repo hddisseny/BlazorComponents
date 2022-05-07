@@ -23,7 +23,24 @@
 
             <ComponentParameters>
                                 
-                                          
+                <ParameterSection>
+                    <Name>Title</Name>
+                    <Type>RenderFragment</Type>
+                    <TypeDescription>fragment</TypeDescription>
+                    <Description>
+                        <p>Title of the modal.</p>
+                    </Description>
+                </ParameterSection>                  
+                
+                <ParameterSection>
+                    <Name>Content</Name>
+                    <Type>RenderFragment</Type>
+                    <TypeDescription>fragment</TypeDescription>
+                    <Description>
+                        <p>Content of the modal.</p>
+                    </Description>
+                </ParameterSection>  
+                
                 <ParameterSection>
                     <Name>ShowModal</Name>
                     <Type>bool</Type>
@@ -32,15 +49,6 @@
                         <p>Indicates if the modal has to appear.</p>
                     </Description>
                 </ParameterSection>            
-                
-                <ParameterSection>
-                    <Name>DialogType</Name>
-                    <Type>BZ_Dialog.CollectionDialogTypes</Type>
-                    <TypeDescription>Ok | OkCancel | Cancel</TypeDescription>
-                    <Description>
-                        <p>Indicates the number and type of buttons.</p>
-                    </Description>
-                </ParameterSection>                  
                 
                 <ParameterSection>
                     <Name>ResultModal</Name>
@@ -58,15 +66,42 @@
                     <Description>
                         <p>Indicate if the overlay need to appear or not.</p>
                     </Description>
-                </ParameterSection>            
+                </ParameterSection>
                 
-                           
+                <ParameterSection>
+                    <Name>Buttons</Name>
+                    <Type>ZorDialog.DialogButtons</Type>
+                    <TypeDescription>Ok | OkCancel | Cancel</TypeDescription>
+                    <Description>
+                        <p>Indicates the number and type of buttons.</p>
+                    </Description>
+                </ParameterSection> 
+                
+
                 <ParameterSection>
                     <Name>Position</Name>
-                    <Type>BZ_Dialog.DialogPosition</Type>
+                    <Type>BootzorComponents.ZorEnums.Position</Type>
                     <TypeDescription>top | TopLeft | TopRight | bottom | BottomLeft | BottomRight | Center</TypeDescription>
                     <Description>
                         <p>Position of the dialog.</p>
+                    </Description>
+                </ParameterSection>    
+                
+                <ParameterSection>
+                    <Name>Position</Name>
+                    <Type>BootzorComponents.ZorEnums.Effect</Type>
+                    <TypeDescription>None | Transition</TypeDescription>
+                    <Description>
+                        <p>Effect of the dialog.</p>
+                    </Description>
+                </ParameterSection>                    
+                
+                <ParameterSection>
+                    <Name>Icon</Name>
+                    <Type>ZorDialog.DialogIcon</Type>
+                    <TypeDescription>None | Information | Warning | Question</TypeDescription>
+                    <Description>
+                        <p>Icon in the content of the modal.</p>
                     </Description>
                 </ParameterSection>    
 
@@ -74,12 +109,13 @@
             </ComponentParameters>
 
             <Example>
-                &#60;<b>ZorDialog</b> <i>DialogType</i>="DialogPosition.OkCancel"&#62;
+                &#60;<b>ZorDialog</b> <i>DialogType</i>="DialogPosition.OkCancel"
                     <i>ResultModal</i>="EventCallback&#60;bool&#62;"
                     <i>Position</i>="DialogPosition.Top"
-                    <i>Overlay</i>= 
-                    <i>ShowDialog</i> = 
-                    <i>Overlay</i>= 
+                    <i>Overlay</i> = true 
+                    <i>ShowDialog</i> = true
+                    <i>DialogEffect</i> = "Effect.Transition"
+                    <i>Icon</i> = "DialogIcon.Information"  &#62;
 
                     &#60;Title&#62;
                         &#60;p&#62;Title&#60;/p&#62;
@@ -145,7 +181,7 @@
                 <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,false,DialogIcon.Question))" >Dialog without owerlay</button>
 
                 <ZorDialog  @ref="zorDialog"
-                    DialogType="DialogButtons.OkCancel"
+                    Buttons="DialogButtons.OkCancel"
                     ResultModal="EventResult"
                     DialogPosition=@Position
                     ShowDialog=@ShowDialog

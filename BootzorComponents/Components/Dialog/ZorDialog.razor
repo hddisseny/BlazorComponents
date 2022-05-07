@@ -29,7 +29,7 @@
 
                 <div class="__bz_Dialog-frame__content-footer">
                     @*TODO Cambiar swithc, no es dinamico*@
-                    @switch (DialogType)
+                    @switch (Buttons)
                     {
                         case DialogButtons.Ok:
                             <button type="button" class="__bz_Dialog-frame__content-footer__button-ok" @onclick=@(()=>ClickDialogResult(true))>OK</button>

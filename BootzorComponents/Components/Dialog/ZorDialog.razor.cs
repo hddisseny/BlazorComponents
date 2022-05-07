@@ -42,7 +42,7 @@ public partial class ZorDialog : ComponentBase
     /// Type of the dialog to incate the number of buttons
     /// </summary>
     [Parameter, EditorRequired]
-    public DialogButtons DialogType { get; set; }
+    public DialogButtons Buttons { get; set; }
 
     //Private variable to control the name of the type in the css
     private string _dialogPosition = Position.Top.GetNameClassCss();
