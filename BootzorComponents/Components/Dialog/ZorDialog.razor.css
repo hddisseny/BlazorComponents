@@ -19,27 +19,36 @@
     background-color: transparent !important;
 }
 
-.__bz_Dialog .Top {
+.__bz_Dialog .ZorPositionTop{
     top: 2.5%;
     left: 50%;
     transform: translateX(-50%);
-    animation-name: in-transition-dialog-top;
-    animation-duration: 0.666s;
 }
 
-@keyframes in-transition-dialog-top {
-    0% { top: -100%; }
-    100% { top: 2.5%; }
-}
+    .__bz_Dialog .ZorPositionTop.ZorEffectTransition {
+        animation-name: in-transition-dialog-top;
+        animation-duration: 0.666s;
+    }
 
+    @keyframes in-transition-dialog-top {
+        0% {
+            top: -100%;
+        }
 
-.__bz_Dialog .Bottom {
-    bottom: 2.5%;
-    left: 50%;
-    transform: translateX(-50%);
-    animation-name: in-transition-dialog-bottom;
-    animation-duration: 0.666s;
-}
+        100% {
+            top: 2.5%;
+        }
+    }
+
+    .__bz_Dialog .ZorPositionBottom {
+        bottom: 2.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        .__bz_Dialog .ZorPositionBottom.ZorEffectTransition {
+            animation-name: in-transition-dialog-bottom;
+            animation-duration: 0.666s;
+        }
 
 @keyframes in-transition-dialog-bottom {
     0% { bottom: -100%; }
@@ -48,14 +57,15 @@
     }
 }
 
-.__bz_Dialog .TopLeft {
+.__bz_Dialog .ZorPositionTopLeft {
     top: 25px;
     left: 2.5%;
     transform: translateX(0%);
-
-    animation-name: in-transition-dialog-topleft;
-    animation-duration: 0.666s;
 }
+    .__bz_Dialog .ZorPositionTopLeft.ZorEffectTransition {
+        animation-name: in-transition-dialog-topleft;
+        animation-duration: 0.666s;
+    }
 
 @keyframes in-transition-dialog-topleft {
     0% {
@@ -68,13 +78,16 @@
     }
 }
 
-.__bz_Dialog .TopRight {
+.__bz_Dialog .ZorPositionTopRight {
     top: 25px;
     right: 2.5%;
     transform: translateX(0%);
-    animation-name: in-transition-dialog-topright;
-    animation-duration: 0.666s;
+
 }
+    .__bz_Dialog .ZorPositionTopRight.ZorEffectTransition {
+        animation-name: in-transition-dialog-topright;
+        animation-duration: 0.666s;
+    }
 
 @keyframes in-transition-dialog-topright {
     0% {
@@ -88,13 +101,15 @@
     }
 }
 
-.__bz_Dialog .BottomRight {
+.__bz_Dialog .ZorPositionBottomRight {
     bottom: 2.5%;
     right: 2.5%;
     transform: translateX(0%);
-    animation-name: in-transition-dialog-bottomright;
-    animation-duration: 0.666s;
 }
+    .__bz_Dialog .ZorPositionBottomRight.ZorEffectTransition {
+        animation-name: in-transition-dialog-bottomright;
+        animation-duration: 0.666s;
+    }
 
 @keyframes in-transition-dialog-bottomright {
     0% {
@@ -107,14 +122,17 @@
         bottom: 2.5%;
     }
 }
-.__bz_Dialog .BottomLeft {
+.__bz_Dialog .ZorPositionBottomLeft {
     bottom: 2.5%;
     left: 2.5%;
     transform: translateX(0%);
     animation-name: in-transition-dialog-bottomleft;
     animation-duration: 0.666s;
 }
-
+    .__bz_Dialog .ZorPositionBottomLeft.ZorEffectTransition {
+        animation-name: in-transition-dialog-bottomleft;
+        animation-duration: 0.666s;
+    }
 @keyframes in-transition-dialog-bottomleft {
     0% {
         bottom: -100%;
@@ -127,7 +145,22 @@
     }
 }
 
-.__bz_Dialog .Center {
+/*Sobrescritura defs los efectos*/
+.__bz_Dialog.ZorEffectNone {
+    animation-name: none !important;
+    animation-duration: 0s;
+}
+
+.__bz_Dialog .ZorEffectNone {
+    animation-name: none !important;
+    animation-duration: 0s;
+}
+
+.__bz_Dialog .ZorEffectNoneTransition {
+}
+/*Fin de sobrescritura defs efectos*/
+
+.__bz_Dialog .ZorPositionCenter {
     bottom: 50%;
     left: 50%;
     transform: translateX(-50%);

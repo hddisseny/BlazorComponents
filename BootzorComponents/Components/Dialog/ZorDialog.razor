@@ -1,7 +1,9 @@
 ﻿
 @if(ShowDialog){
-    <div class="__bz_Dialog @(!Overlay ? "__bz_Dialog-override-overlay":"")">
-        <div class="__bz_Dialog-frame @Position.ToString()">
+    <div class="__bz_Dialog @(!Overlay ? "__bz_Dialog-override-overlay":"") @_dialogEffect" 
+        @ref=@zorDialog tabindex="0" @onkeydown="OnEscapeKeyPressed" >
+
+        <div class="__bz_Dialog-frame @_dialogPosition @_dialogEffect">
             <div class="__bz_Dialog-frame__content">
 
                 <div class="__bz_Dialog-frame__content-header __bz_Dialog-frame__content-header-custom-style">
@@ -18,6 +20,7 @@
                     {
                         @Content
                     }
+
                 </div>
 
                 <div class="__bz_Dialog-frame__content-footer">

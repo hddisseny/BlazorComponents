@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Components;
+using BootzorComponents.ZorEnums;
+using Microsoft.AspNetCore.Components.Web;
 
 namespace BootzorComponents.Components.Dialog;
 
 public partial class ZorDialog : ComponentBase
 {
+    //Reference to our dialog
+    private ElementReference zorDialog;
 
     [Parameter, EditorRequired]
     public RenderFragment Title { get; set; }
@@ -22,6 +26,13 @@ public partial class ZorDialog : ComponentBase
     public bool Overlay { get; set; } = true;
 
     /// <summary>
+    /// Paramenter to indicate when show the dialog. 
+    /// To use you need use @ref in the modal and use NameModal.ShhowModal = true | false
+    /// </summary>
+    [Parameter]
+    public bool ShowDialog { get; set; } = false;
+
+    /// <summary>
     /// EventCallback<bool> to return the result 
     /// </summary>
     [Parameter, EditorRequired]
@@ -33,12 +44,30 @@ public partial class ZorDialog : ComponentBase
     [Parameter, EditorRequired]
     public DialogTypes DialogType { get; set; }
 
+    //Private variable to control the name of the type in the css
+    private string _dialogPosition = Position.Top.GetNameClassCss();
     /// <summary>
     /// Position of the dialog
-    /// DialogPosition.Bottom by default
+    /// DialogPosition.Top by default
     /// </summary>
     [Parameter]
-    public DialogPosition Position { get; set; } = DialogPosition.Bottom;
+    public Position DialogPosition {
+        get => _dialogPosition.GetEnumType<Position>();
+        set => _dialogPosition = value.GetNameClassCss();
+    }
+    
+
+    //Private variable to control the name of the type in the css
+    private string _dialogEffect = Effect.None.GetNameClassCss();
+    /// <summary>
+    /// Position of the dialog
+    /// DialogPosition.Top by default
+    /// </summary>
+    [Parameter]
+    public Effect DialogEffect {
+        get => _dialogEffect.GetEnumType<Effect>();
+        set => _dialogEffect = value.GetNameClassCss();
+    }
 
     /// <summary>
     /// Callback al presionar el botón Ok, Delete
@@ -50,12 +79,22 @@ public partial class ZorDialog : ComponentBase
         return ResultModal.InvokeAsync(result);
     }
 
-    /// <summary>
-    /// Paramenter to indicate when show the dialog. 
-    /// To use you need use @ref in the modal and use NameModal.ShhowModal = true | false
-    /// </summary>
-    [Parameter]
-    public bool ShowDialog { get; set; } = false;
+    //TODO un dialog no suele tener Escape por que permite
+    //al usuario cerrar el dialogo sin leer, lo dejo de momento
+    //por aprendizaje
+    //Check if press Escape key
+    private void OnEscapeKeyPressed(KeyboardEventArgs e)
+    {
+        if (e.Key.Equals("Escape"))
+            ClickDialogResult(false);
+    }
+
+    //Focus on the dialog when appear
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (ShowDialog && !firstRender)
+            await zorDialog.FocusAsync();
+    }
 
     /// <summary>
     /// Collection with the different types of the dialog
@@ -65,19 +104,5 @@ public partial class ZorDialog : ComponentBase
         Ok,
         OkCancel,
         Cancel
-    }
-
-    /// <summary>
-    /// Enum to indicate the position of the dialog
-    /// </summary>
-    public enum DialogPosition
-    {
-        Top,
-        TopLeft,
-        TopRight,
-        Bottom,
-        BottomLeft,
-        BottomRight,
-        Center
     }
 }
