@@ -202,7 +202,7 @@
                 <h4>Results with Transiction Effect Icon Question Colors</h4>
                 <button @onclick="@(() => ShowModalIconColor(Position.Top,Effect.Transition,true,DialogIcon.Question, Color.SmoothWhite))" >Color SmoothWhite</button>
                 <button @onclick="@(() => ShowModalIconColor(Position.TopLeft,Effect.None,true,DialogIcon.None, Color.White))" >Color White</button>
-                <button @onclick="@(() => ShowModalIconColor(Position.TopRight,Effect.Transition,true,DialogIcon.Question, Color.Dark))" >Color Dark</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.TopRight,Effect.Transition,true,DialogIcon.Warning, Color.Dark))" >Color Dark</button>
                 <button @onclick="@(() => ShowModalIconColor(Position.Bottom,Effect.Transition,true,DialogIcon.Information, Color.Blue))" >Color Blue</button>
                 <button @onclick="@(() => ShowModalIconColor(Position.BottomRight,Effect.None,true,DialogIcon.Warning, Color.Orange))" >Color Orange</button>
 
@@ -247,6 +247,7 @@
     public void ShowModal(Position position, Effect effect, bool showOverlay)
     {
         ShowOverlay = showOverlay;
+        DialogColor = Color.SmoothWhite;
         Position = position;
         ShowDialog = true;
         DialogEffect = effect;
@@ -260,8 +261,12 @@
 
     public void ShowModalIconColor(Position position, Effect effect, bool showOverlay, DialogIcon icon, Color color)
     {
+        DialogIcon = icon;
         DialogColor = color;
-        ShowModalIcon(position, effect, showOverlay,icon);
+        ShowOverlay = showOverlay;
+        Position = position;
+        ShowDialog = true;
+        DialogEffect = effect;
     }
 
     public void EventResult(bool result)
