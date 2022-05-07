@@ -95,32 +95,63 @@
             
             <Result>
                 <h4>Results with None Effect</h4>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Top, Effect.None, true))" >Dialog Top</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.TopLeft,Effect.None,true))" >Dialog TopLeft</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.TopRight,Effect.None,true))" >Dialog TopRight</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Bottom,Effect.None,true))" >Dialog Bottom</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.BottomRight,Effect.None,true))" >Dialog BottomRight</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.BottomLeft,Effect.None,true))" >Dialog BottomLeft</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Center,Effect.None,true))" >Dialog Center</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Top,Effect.None,false))" >Dialog without owerlay</button>
+                <button @onclick="@(() => ShowModal(Position.Top, Effect.None, true))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModal(Position.TopLeft,Effect.None,true))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModal(Position.TopRight,Effect.None,true))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModal(Position.Bottom,Effect.None,true))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModal(Position.BottomRight,Effect.None,true))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModal(Position.BottomLeft,Effect.None,true))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModal(Position.Center,Effect.None,true))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModal(Position.Top,Effect.None,false))" >Dialog without owerlay</button>
                 
                 <h4>Results with Transiction Effect</h4>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Top,Effect.Transition,true))" >Dialog Top</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.TopLeft,Effect.Transition,true))" >Dialog TopLeft</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.TopRight,Effect.Transition,true))" >Dialog TopRight</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Bottom,Effect.Transition,true))" >Dialog Bottom</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.BottomRight,Effect.Transition,true))" >Dialog BottomRight</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.BottomLeft,Effect.Transition,true))" >Dialog BottomLeft</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Center,Effect.Transition,true))" >Dialog Center</button>
-                <button @onclick="@(() => ShowModalWithOverlay(Position.Top,Effect.Transition,false))" >Dialog without owerlay</button>
+                <button @onclick="@(() => ShowModal(Position.Top,Effect.Transition,true))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModal(Position.TopLeft,Effect.Transition,true))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModal(Position.TopRight,Effect.Transition,true))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModal(Position.Bottom,Effect.Transition,true))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModal(Position.BottomRight,Effect.Transition,true))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModal(Position.BottomLeft,Effect.Transition,true))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModal(Position.Center,Effect.Transition,true))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModal(Position.Top,Effect.Transition,false))" >Dialog without owerlay</button>
+                
+                <h4>Results with Transiction Effect Icon Information</h4>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,true,DialogIcon.Information))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopLeft,Effect.Transition,true,DialogIcon.Information))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopRight,Effect.Transition,true,DialogIcon.Information))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Bottom,Effect.Transition,true,DialogIcon.Information))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomRight,Effect.Transition,true,DialogIcon.Information))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomLeft,Effect.Transition,true,DialogIcon.Information))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Center,Effect.Transition,true,DialogIcon.Information))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,false,DialogIcon.Information))" >Dialog without owerlay</button>
+      
+                <h4>Results with Transiction Effect Icon warning</h4>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,true,DialogIcon.Warning))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopLeft,Effect.Transition,true,DialogIcon.Warning))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopRight,Effect.Transition,true,DialogIcon.Warning))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Bottom,Effect.Transition,true,DialogIcon.Warning))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomRight,Effect.Transition,true,DialogIcon.Warning))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomLeft,Effect.Transition,true,DialogIcon.Warning))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Center,Effect.Transition,true,DialogIcon.Warning))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,false,DialogIcon.Warning))" >Dialog without owerlay</button>
+                                
+                <h4>Results with Transiction Effect Icon Question</h4>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,true,DialogIcon.Question))" >Dialog Top</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopLeft,Effect.Transition,true,DialogIcon.Question))" >Dialog TopLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.TopRight,Effect.Transition,true,DialogIcon.Question))" >Dialog TopRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Bottom,Effect.Transition,true,DialogIcon.Question))" >Dialog Bottom</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomRight,Effect.Transition,true,DialogIcon.Question))" >Dialog BottomRight</button>
+                <button @onclick="@(() => ShowModalIcon(Position.BottomLeft,Effect.Transition,true,DialogIcon.Question))" >Dialog BottomLeft</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Center,Effect.Transition,true,DialogIcon.Question))" >Dialog Center</button>
+                <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,false,DialogIcon.Question))" >Dialog without owerlay</button>
 
                 <ZorDialog  @ref="zorDialog"
-                    DialogType="DialogTypes.OkCancel"
+                    DialogType="DialogButtons.OkCancel"
                     ResultModal="EventResult"
                     DialogPosition=@Position
                     ShowDialog=@ShowDialog
                     Overlay=@ShowOverlay
-                    DialogEffect=@DialogEffect>
+                    DialogEffect=@DialogEffect
+                    Icon=@DialogIcon>
 
                     <Title> 
                         Dialog title
@@ -140,19 +171,26 @@
 
 @code{
 
-    public ZorDialog zorDialog;
+    public ZorDialog? zorDialog;
 
     private bool ShowDialog { get; set; } = false;
     private Position Position { get; set; } = Position.Top; 
     private bool ShowOverlay { get; set; }= true;
     private Effect DialogEffect { get; set; } = Effect.Transition;
+    private DialogIcon DialogIcon { get; set; } = DialogIcon.None;
 
-    public void ShowModalWithOverlay(Position position, Effect effect, bool showOverlay)
+    public void ShowModal(Position position, Effect effect, bool showOverlay)
     {
         ShowOverlay = showOverlay;
         Position = position;
         ShowDialog = true;
         DialogEffect = effect;
+    }    
+
+    public void ShowModalIcon(Position position, Effect effect, bool showOverlay, DialogIcon icon)
+    {
+        DialogIcon = icon;
+        ShowModal(position, effect, showOverlay);
     }
 
     public void EventResult(bool result)

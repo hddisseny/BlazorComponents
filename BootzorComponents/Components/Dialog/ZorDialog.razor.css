@@ -220,8 +220,36 @@
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body {
         padding: 5px 35px;
-        font-size: 1rem;
+        min-height:65px;
     }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-content {
+            font-size: 1rem;
+        }
+
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon {
+            width: 65px;
+            height: 65px;
+            float: left;
+            margin-right: 15px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconNone {
+                width: auto;
+                height: auto;
+                margin-right: 0px;
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconInformation {
+                background-image: url("assets/master/icons/info.png");
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconWarning {
+                background-image: url("assets/master/icons/warning.svg.png");
+            }
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconQuestion {
+                background-image: url("assets/master/icons/question.webp");
+            }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer {
         padding: 15px 35px 25px 35px;
@@ -258,3 +286,4 @@
             .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer .__bz_Dialog-frame__content-footer__button-delete:hover {
                 background-color: darkred;
             }
+

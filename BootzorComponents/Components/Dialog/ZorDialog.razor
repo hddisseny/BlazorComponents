@@ -16,25 +16,29 @@
                 </div>
 
                 <div class="__bz_Dialog-frame__content-body">
-                    @if(Content != null)
-                    {
-                        @Content
-                    }
-
+                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon">
+                    </div>
+                    <div class="__bz_Dialog-frame__content-body-content">
+                        asdasdasd asd as das ds 
+                        @if(Content != null)
+                        {
+                            @Content
+                        }
+                    </div>
                 </div>
 
                 <div class="__bz_Dialog-frame__content-footer">
                     @*TODO Cambiar swithc, no es dinamico*@
                     @switch (DialogType)
                     {
-                        case DialogTypes.Ok:
+                        case DialogButtons.Ok:
                             <button type="button" class="__bz_Dialog-frame__content-footer__button-ok" @onclick=@(()=>ClickDialogResult(true))>OK</button>
                             break;
-                        case DialogTypes.OkCancel:
+                        case DialogButtons.OkCancel:
                             <button type="button" class="__bz_Dialog-frame__content-footer__button-cancel" @onclick="@(()=>ClickDialogResult(false))">Cancel</button>
                             <button type="button" class="__bz_Dialog-frame__content-footer__button-ok" @onclick=@(()=>ClickDialogResult(true))>OK</button>
                             break;
-                        case DialogTypes.Cancel:
+                        case DialogButtons.Cancel:
                             <button type="button" class="__bz_Dialog-frame__content-footer__button-cancel" @onclick="@(()=>ClickDialogResult(false))">Cancel</button>
                             break;
                     }

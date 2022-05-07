@@ -10,7 +10,7 @@ public partial class ZorDialog : ComponentBase
     private ElementReference zorDialog;
 
     [Parameter, EditorRequired]
-    public RenderFragment Title { get; set; }
+    public RenderFragment? Title { get; set; }
 
     /// <summary>
     /// Content of the modal
@@ -42,7 +42,7 @@ public partial class ZorDialog : ComponentBase
     /// Type of the dialog to incate the number of buttons
     /// </summary>
     [Parameter, EditorRequired]
-    public DialogTypes DialogType { get; set; }
+    public DialogButtons DialogType { get; set; }
 
     //Private variable to control the name of the type in the css
     private string _dialogPosition = Position.Top.GetNameClassCss();
@@ -68,6 +68,20 @@ public partial class ZorDialog : ComponentBase
         get => _dialogEffect.GetEnumType<Effect>();
         set => _dialogEffect = value.GetNameClassCss();
     }
+
+    //Private variable to control the name of the type in the css
+    private string _dialogIcon = DialogIcon.None.GetNameClassCss();
+    /// <summary>
+    /// Position of the dialog
+    /// DialogIcon.None by default
+    /// </summary>
+    [Parameter]
+    public DialogIcon Icon
+    {
+        get => _dialogIcon.GetEnumType<DialogIcon>();
+        set => _dialogIcon = value.GetNameClassCss();
+    }
+
 
     /// <summary>
     /// Callback al presionar el botón Ok, Delete
@@ -99,10 +113,21 @@ public partial class ZorDialog : ComponentBase
     /// <summary>
     /// Collection with the different types of the dialog
     /// </summary>
-    public enum DialogTypes
+    public enum DialogButtons
     {
         Ok,
         OkCancel,
         Cancel
+    }
+
+    /// <summary>
+    /// Collection with the different types of the dialog
+    /// </summary>
+    public enum DialogIcon
+    {
+        None,
+        Information,
+        Warning,
+        Question
     }
 }
