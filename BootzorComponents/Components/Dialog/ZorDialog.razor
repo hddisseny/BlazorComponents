@@ -4,19 +4,19 @@
         @ref=@zorDialog tabindex="0" @onkeydown="OnEscapeKeyPressed" >
 
         <div class="__bz_Dialog-frame @_dialogPosition @_dialogEffect">
-            <div class="__bz_Dialog-frame__content">
+            <div class="__bz_Dialog-frame__content @_dialogColor">
 
                 <div class="__bz_Dialog-frame__content-header __bz_Dialog-frame__content-header-custom-style">
                 
-                    <h4 class="__bz_Dialog-frame__content-header__title">
+                    <div class="__bz_Dialog-frame__content-header__title">
                         @Title
-                    </h4>
+                    </div>
 
                     <button type="button" class="__bz_Dialog-frame__content-header__button-close" @onclick="@(() => ClickDialogResult(false))">&times;</button>
                 </div>
 
                 <div class="__bz_Dialog-frame__content-body">
-                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon">
+                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon @_dialogColor">
                     </div>
                     <div class="__bz_Dialog-frame__content-body-content">
                         asdasdasd asd as das ds 

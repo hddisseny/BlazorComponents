@@ -81,6 +81,20 @@ public partial class ZorDialog : ComponentBase
         get => _dialogIcon.GetEnumType<DialogIcon>();
         set => _dialogIcon = value.GetNameClassCss();
     }
+        
+    
+    //Private variable to control the name of the type in the css
+    private string _dialogColor = Color.SmoothWhite.GetNameClassCss();
+    /// <summary>
+    /// Position of the dialog
+    /// DialogIcon.None by default
+    /// </summary>
+    [Parameter]
+    public Color DialogColor
+    {
+        get => _dialogColor.GetEnumType<Color>();
+        set => _dialogColor = value.GetNameClassCss();
+    }
 
 
     /// <summary>

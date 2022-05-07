@@ -27,7 +27,7 @@
 
     .__bz_Dialog .ZorPositionTop.ZorEffectTransition {
         animation-name: in-transition-dialog-top;
-        animation-duration: 0.666s;
+        animation-duration: 0.333s;
     }
 
     @keyframes in-transition-dialog-top {
@@ -47,7 +47,7 @@
     }
         .__bz_Dialog .ZorPositionBottom.ZorEffectTransition {
             animation-name: in-transition-dialog-bottom;
-            animation-duration: 0.666s;
+            animation-duration: 0.333s;
         }
 
 @keyframes in-transition-dialog-bottom {
@@ -64,7 +64,7 @@
 }
     .__bz_Dialog .ZorPositionTopLeft.ZorEffectTransition {
         animation-name: in-transition-dialog-topleft;
-        animation-duration: 0.666s;
+        animation-duration: 0.333s;
     }
 
 @keyframes in-transition-dialog-topleft {
@@ -86,7 +86,7 @@
 }
     .__bz_Dialog .ZorPositionTopRight.ZorEffectTransition {
         animation-name: in-transition-dialog-topright;
-        animation-duration: 0.666s;
+        animation-duration: 0.333s;
     }
 
 @keyframes in-transition-dialog-topright {
@@ -108,7 +108,7 @@
 }
     .__bz_Dialog .ZorPositionBottomRight.ZorEffectTransition {
         animation-name: in-transition-dialog-bottomright;
-        animation-duration: 0.666s;
+        animation-duration: 0.333s;
     }
 
 @keyframes in-transition-dialog-bottomright {
@@ -127,11 +127,11 @@
     left: 2.5%;
     transform: translateX(0%);
     animation-name: in-transition-dialog-bottomleft;
-    animation-duration: 0.666s;
+    animation-duration: 0.333s;
 }
     .__bz_Dialog .ZorPositionBottomLeft.ZorEffectTransition {
         animation-name: in-transition-dialog-bottomleft;
-        animation-duration: 0.666s;
+        animation-duration: 0.333s;
     }
 @keyframes in-transition-dialog-bottomleft {
     0% {
@@ -166,7 +166,7 @@
     transform: translateX(-50%);
     transform: translateX(-50%);
     animation-name: in-transition-dialog-center;
-    animation-duration: 0.666s;
+    animation-duration: 0.333s;
 }
 
 @keyframes in-transition-dialog-center {
@@ -182,19 +182,52 @@
 .__bz_Dialog .__bz_Dialog-frame {
     max-width: 355px;
     width: 95%;
-    background-color: #eaeaea;
     height: auto;
     position: absolute;
+    border-radius: 6px;
 }
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorSmoothWhite,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorWhite,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorBlue,
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorOrange {
+        border-radius: 6px;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorSmoothWhite {
+        background-color: #eaeaea;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorWhite {
+        background-color: #ffffff;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark {
+        background-color: #1F1B24;
+        color:whitesmoke;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorBlue {
+        background-color: #D5F3FE;
+    }
+
+    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorOrange {
+        background-color: #FFE9C9;
+    }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content {
     }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header {
-        padding: 25px 35px 5px 35px;
+        padding: 0px 0px 5px 35px;
     }
 
+
+
         .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__title {
+            padding: 25px 35px 0px 0px;
+            font-size: 18px;
+            font-weight:400;
         }
 
         .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close {
@@ -218,25 +251,31 @@
             }
 
 
-    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body {
-        padding: 5px 35px;
-        min-height:65px;
-    }
-
-        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-content {
-            font-size: 1rem;
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body {
+            padding: 0px 35px;
+            min-height: 65px;
+            display: flex;
         }
+
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-content {
+                font-size: 1rem;
+                width: auto;
+                margin:auto;
+            }
 
         .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon {
             width: 65px;
-            height: 65px;
+            height: auto;
             float: left;
             margin-right: 15px;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
+            background-size: contain;
         }
-            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconNone {
+            .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorColorDark {
+                filter:invert(85%);
+            }
+                .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconNone {
                 width: auto;
                 height: auto;
                 margin-right: 0px;
@@ -252,7 +291,7 @@
             }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-footer {
-        padding: 15px 35px 25px 35px;
+        padding: 15px 35px 15px 35px;
         text-align: right;
     }
 

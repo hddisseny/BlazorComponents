@@ -180,6 +180,14 @@
                 <button @onclick="@(() => ShowModalIcon(Position.Center,Effect.Transition,true,DialogIcon.Question))" >Dialog Center</button>
                 <button @onclick="@(() => ShowModalIcon(Position.Top,Effect.Transition,false,DialogIcon.Question))" >Dialog without owerlay</button>
 
+                <h4>Results with Transiction Effect Icon Question Colors</h4>
+                <button @onclick="@(() => ShowModalIconColor(Position.Top,Effect.Transition,true,DialogIcon.Question, Color.SmoothWhite))" >Color SmoothWhite</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.TopLeft,Effect.Transition,true,DialogIcon.Question, Color.White))" >Color White</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.TopRight,Effect.Transition,true,DialogIcon.Question, Color.Dark))" >Color Dark</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.Bottom,Effect.Transition,true,DialogIcon.Question, Color.Blue))" >Color Blue</button>
+                <button @onclick="@(() => ShowModalIconColor(Position.BottomRight,Effect.Transition,true,DialogIcon.Question, Color.Orange))" >Color Orange</button>
+
+
                 <ZorDialog  @ref="zorDialog"
                     Buttons="DialogButtons.OkCancel"
                     ResultModal="EventResult"
@@ -187,7 +195,8 @@
                     ShowDialog=@ShowDialog
                     Overlay=@ShowOverlay
                     DialogEffect=@DialogEffect
-                    Icon=@DialogIcon>
+                    Icon=@DialogIcon
+                    DialogColor=@DialogColor>
 
                     <Title> 
                         Dialog title
@@ -214,6 +223,7 @@
     private bool ShowOverlay { get; set; }= true;
     private Effect DialogEffect { get; set; } = Effect.Transition;
     private DialogIcon DialogIcon { get; set; } = DialogIcon.None;
+    private Color DialogColor { get; set; } = Color.SmoothWhite; 
 
     public void ShowModal(Position position, Effect effect, bool showOverlay)
     {
@@ -227,6 +237,12 @@
     {
         DialogIcon = icon;
         ShowModal(position, effect, showOverlay);
+    }    
+
+    public void ShowModalIconColor(Position position, Effect effect, bool showOverlay, DialogIcon icon, Color color)
+    {
+        DialogColor = color;
+        ShowModalIcon(position, effect, showOverlay,icon);
     }
 
     public void EventResult(bool result)
