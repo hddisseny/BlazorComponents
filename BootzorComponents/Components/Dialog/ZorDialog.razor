@@ -12,11 +12,11 @@
                         @Title
                     </div>
 
-                    <button type="button" class="__bz_Dialog-frame__content-header__button-close" @onclick="@(() => ClickDialogResult(false))">&times;</button>
+                    <button type="button" class="__bz_Dialog-frame__content-header__button-close @_dialogColor" @onclick="@(() => ClickDialogResult(false))">&times;</button>
                 </div>
 
                 <div class="__bz_Dialog-frame__content-body">
-                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon @_dialogColor">
+                    <div class="__bz_Dialog-frame__content-body-icon @_dialogIcon @(@_dialogColor.Equals("ZorColorDark") ? @_dialogColor:"")">
                     </div>
                     <div class="__bz_Dialog-frame__content-body-content">
                         asdasdasd asd as das ds 

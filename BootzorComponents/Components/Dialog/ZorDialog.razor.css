@@ -207,27 +207,11 @@
         border-radius: 6px;
     }
 
-    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorSmoothWhite {
-        background-color: #eaeaea;
-    }
-
-    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorWhite {
-        background-color: #ffffff;
-    }
-
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorDark {
-        background-color: #1F1B24;
         color:whitesmoke;
         border: 1px solid #626262f2;
     }
 
-    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorBlue {
-        background-color: #D5F3FE;
-    }
-
-    .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content.ZorColorOrange {
-        background-color: #FFE9C9;
-    }
 
     .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content {
     }
@@ -254,7 +238,9 @@
             background-color: transparent;
             transition: all .333s ease;
         }
-
+        .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close.ZorColorDark {
+            filter:invert(0.85);
+        }
             .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-header .__bz_Dialog-frame__content-header__button-close:hover {
                 color: darkred;
             }
@@ -288,6 +274,7 @@
         }
             .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorColorDark {
                 filter:invert(85%);
+                background-color:transparent;
             }
                 .__bz_Dialog .__bz_Dialog-frame .__bz_Dialog-frame__content .__bz_Dialog-frame__content-body .__bz_Dialog-frame__content-body-icon.ZorDialogIconNone {
                 width: auto;
